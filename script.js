@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
   initStickyHeader();
   initMobileMenu();
+  initHeroInfographics();
   initPlatformTabs();
   initServiceFilters();
   initRoiCalculator();
@@ -387,3 +388,176 @@ function initThemeToggle() {
     }
   });
 }
+
+/* ==========================================================================
+   10. HERO INFOGRAPHICS ANIMATION & INTERACTIVITY ENGINE
+   ========================================================================== */
+function initHeroInfographics() {
+  const tabs = document.querySelectorAll('.hero-info-tab');
+  const panels = document.querySelectorAll('.info-panel');
+  const miniCards = document.querySelectorAll('.metrics-strip-row .mini-stat-card');
+  const floatCards = document.querySelectorAll('.floating-card[data-hero-target]');
+  const flywheelNodes = document.querySelectorAll('.flywheel-node[data-hero-target]');
+  const dashboardFrame = document.querySelector('.dashboard-mockup-frame');
+
+  if (!tabs.length || !panels.length) return;
+
+  const pillars = ['automation', 'whatsapp', 'metaads', 'googleads'];
+  let currentIndex = 0;
+  let isPaused = false;
+  let progressInterval = null;
+  let progressPercent = 0;
+  const cycleDuration = 7000; // 7 seconds per slide
+  const stepTime = 50; // update progress every 50ms
+
+  function switchPillar(pillarKey, manual = false) {
+    const targetIdx = pillars.indexOf(pillarKey);
+    if (targetIdx !== -1) {
+      currentIndex = targetIdx;
+    }
+
+    // Reset progress on manual switch
+    if (manual) {
+      progressPercent = 0;
+    }
+
+    // 1. Update Tabs
+    tabs.forEach(tab => {
+      const isMatch = tab.getAttribute('data-pillar') === pillarKey;
+      tab.classList.toggle('active', isMatch);
+      tab.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+      const progFill = tab.querySelector('.tab-progress-fill');
+      if (progFill && !isMatch) {
+        progFill.style.width = '0%';
+      }
+    });
+
+    // 2. Update Panels
+    panels.forEach(panel => {
+      const isMatch = panel.id === `panel-${pillarKey}`;
+      panel.classList.toggle('active', isMatch);
+    });
+
+    // 3. Update Mini Stat Cards
+    miniCards.forEach(card => {
+      const isMatch = card.getAttribute('data-hero-target') === pillarKey;
+      card.classList.toggle('active-card', isMatch);
+    });
+
+    // 4. Update Flywheel Nodes
+    flywheelNodes.forEach(node => {
+      const isMatch = node.getAttribute('data-hero-target') === pillarKey;
+      if (isMatch) {
+        node.style.transform = 'translateY(-3px)';
+      } else {
+        node.style.transform = '';
+      }
+    });
+  }
+
+  function updateProgressBar() {
+    const activeTab = document.querySelector('.hero-info-tab.active');
+    if (activeTab) {
+      const fill = activeTab.querySelector('.tab-progress-fill');
+      if (fill) {
+        fill.style.width = `${progressPercent}%`;
+      }
+    }
+  }
+
+  function startCycleTimer() {
+    if (progressInterval) clearInterval(progressInterval);
+
+    progressInterval = setInterval(() => {
+      if (!isPaused) {
+        progressPercent += (stepTime / cycleDuration) * 100;
+        if (progressPercent >= 100) {
+          progressPercent = 0;
+          currentIndex = (currentIndex + 1) % pillars.length;
+          switchPillar(pillars[currentIndex]);
+        } else {
+          updateProgressBar();
+        }
+      }
+    }, stepTime);
+  }
+
+  // Click handlers on Infographic Tabs
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const pillar = tab.getAttribute('data-pillar');
+      progressPercent = 0;
+      switchPillar(pillar, true);
+    });
+  });
+
+  // Click handlers on Mini Stat Cards
+  miniCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const target = card.getAttribute('data-hero-target');
+      if (target) {
+        progressPercent = 0;
+        switchPillar(target, true);
+      }
+    });
+    // Keyboard accessibility
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const target = card.getAttribute('data-hero-target');
+        if (target) {
+          progressPercent = 0;
+          switchPillar(target, true);
+        }
+      }
+    });
+  });
+
+  // Click handlers on Floating Cards
+  floatCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const target = card.getAttribute('data-hero-target');
+      if (target) {
+        progressPercent = 0;
+        switchPillar(target, true);
+        dashboardFrame?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
+
+  // Click handlers on Flywheel Nodes
+  flywheelNodes.forEach(node => {
+    node.addEventListener('click', () => {
+      const target = node.getAttribute('data-hero-target');
+      if (target) {
+        progressPercent = 0;
+        switchPillar(target, true);
+      }
+    });
+  });
+
+  // Pause auto-cycle on mouse hover, resume on mouse leave
+  if (dashboardFrame) {
+    dashboardFrame.addEventListener('mouseenter', () => {
+      isPaused = true;
+    });
+    dashboardFrame.addEventListener('mouseleave', () => {
+      isPaused = false;
+    });
+  }
+
+  // Interactive WhatsApp Quick-Reply Chips
+  const waReplyChips = document.querySelectorAll('.wa-reply-chip');
+  waReplyChips.forEach(chip => {
+    chip.addEventListener('click', (e) => {
+      e.stopPropagation();
+      waReplyChips.forEach(c => c.classList.remove('active-reply'));
+      chip.classList.add('active-reply');
+    });
+  });
+
+  // Initialize progress & start loop
+  updateProgressBar();
+  startCycleTimer();
+}
+
