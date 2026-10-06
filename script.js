@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
   initConsultationModal();
   initChartInteractivity();
+  initContactPage();
 });
 
 /* ==========================================================================
@@ -312,7 +313,7 @@ function initConsultationModal() {
       
       // Delay slightly for smooth UX
       setTimeout(() => {
-        window.open(`https://wa.me/919840000000?text=${waText}`, '_blank');
+        window.open(`https://wa.me/917904053790?text=${waText}`, '_blank');
       }, 1200);
 
       form.reset();
@@ -387,3 +388,77 @@ function initThemeToggle() {
     }
   });
 }
+
+/* ==========================================================================
+   10. CONTACT PAGE INTERACTIVITY (Form, Copy Email, WhatsApp)
+   ========================================================================== */
+function initContactPage() {
+  const contactForm = document.getElementById('contactPageForm');
+  const copyEmailBtn = document.getElementById('copyEmailBtn');
+  const toast = document.getElementById('toastNotice');
+
+  function showToast(message) {
+    if (!toast) return;
+    const toastMsg = toast.querySelector('.toast-msg');
+    if (toastMsg) toastMsg.textContent = message;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 5000);
+  }
+
+  // One-click Copy Email
+  if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const email = 'contact@brandingkit.in';
+      try {
+        await navigator.clipboard.writeText(email);
+        showToast('Email contact@brandingkit.in copied to clipboard!');
+      } catch (err) {
+        showToast('Email: contact@brandingkit.in');
+      }
+    });
+  }
+
+  // Interactive Checkbox Pills in Contact Form
+  const pageCheckboxes = document.querySelectorAll('#contactPageForm .custom-checkbox-pill');
+  pageCheckboxes.forEach(pill => {
+    const input = pill.querySelector('input');
+    if (!input) return;
+    pill.addEventListener('click', (e) => {
+      if (e.target !== input) {
+        input.checked = !input.checked;
+      }
+      pill.classList.toggle('checked', input.checked);
+    });
+  });
+
+  // Contact Form Submission
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('contactName')?.value || '';
+      const phone = document.getElementById('contactPhone')?.value || '';
+      const email = document.getElementById('contactEmail')?.value || '';
+      const company = document.getElementById('contactCompany')?.value || '';
+      const message = document.getElementById('contactMessage')?.value || '';
+      const selectedServices = Array.from(document.querySelectorAll('#contactPageForm input[name="services"]:checked'))
+        .map(el => el.value)
+        .join(', ');
+
+      showToast(`Thank you ${name}! Your inquiry has been sent to our Chennai team. Connecting to WhatsApp...`);
+
+      // WhatsApp routing
+      const waText = encodeURIComponent(
+        `Hi Brandingkit Team, I am reaching out from your website contact page.\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nCompany: ${company}\nServices: ${selectedServices || 'Growth Solutions'}\nMessage: ${message}`
+      );
+
+      setTimeout(() => {
+        window.open(`https://wa.me/917904053790?text=${waText}`, '_blank');
+      }, 1200);
+
+      contactForm.reset();
+      pageCheckboxes.forEach(p => p.classList.remove('checked'));
+    });
+  }
+}
+
