@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initConsultationModal();
   initChartInteractivity();
   initContactPage();
+  initFloatingWhatsApp();
 });
 
 /* ==========================================================================
@@ -460,5 +461,21 @@ function initContactPage() {
       pageCheckboxes.forEach(p => p.classList.remove('checked'));
     });
   }
+}
+
+/* ==========================================================================
+   11. FLOATING WHATSAPP BUTTON (Cross-platform Click Helper)
+   ========================================================================== */
+function initFloatingWhatsApp() {
+  const waBtn = document.querySelector('.whatsapp-float-btn');
+  if (!waBtn) return;
+
+  waBtn.addEventListener('click', (e) => {
+    const url = waBtn.getAttribute('href');
+    if (!url) return;
+    // Explicitly guarantee opening even if anchor default click is hindered
+    window.open(url, '_blank', 'noopener,noreferrer');
+    e.preventDefault();
+  });
 }
 
