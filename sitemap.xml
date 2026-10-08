@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ======================================================================
+       BRANDINGKIT — Official XML Sitemap
+       Domain: https://brandingkit.in/
+       Generated: 2026-10-08
+       ====================================================================== -->
+
+  <!-- 1. Homepage & Core Solutions Overview -->
+  <url>
+    <loc>https://brandingkit.in/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://brandingkit.in/logo.png</image:loc>
+      <image:title>Brandingkit - Business Automation &amp; Digital Growth Agency Chennai</image:title>
+      <image:caption>Premier business automation, WhatsApp bots, CRM workflows, and performance digital marketing in Chennai, India.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 2. Contact Us & Chennai HQ Office -->
+  <url>
+    <loc>https://brandingkit.in/contact.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://brandingkit.in/logo.png</image:loc>
+      <image:title>Contact Brandingkit Office - Padur, Chennai</image:title>
+      <image:caption>Office: No. S4, Gangai Amman Kovil Street, Near Bus Stand, Padur, Chennai 603103.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 3. HTML Site Map & Architecture Index -->
+  <url>
+    <loc>https://brandingkit.in/sitemap.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>

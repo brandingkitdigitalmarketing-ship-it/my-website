@@ -1,0 +1,10 @@
+# ==============================================================================
+# robots.txt for Brandingkit
+# Website: https://brandingkit.in/
+# ==============================================================================
+
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://brandingkit.in/sitemap.xml
