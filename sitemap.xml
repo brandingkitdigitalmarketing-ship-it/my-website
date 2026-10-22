@@ -6,13 +6,13 @@
   <!-- ======================================================================
        BRANDINGKIT — Official XML Sitemap
        Domain: https://brandingkit.in/
-       Generated: 2026-10-08
+       Generated: 2026-10-22
        ====================================================================== -->
 
   <!-- 1. Homepage & Core Solutions Overview -->
   <url>
     <loc>https://brandingkit.in/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -25,7 +25,7 @@
   <!-- 2. Contact Us & Chennai HQ Office -->
   <url>
     <loc>https://brandingkit.in/contact.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -38,7 +38,7 @@
   <!-- 3. HTML Site Map & Architecture Index -->
   <url>
     <loc>https://brandingkit.in/sitemap.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
