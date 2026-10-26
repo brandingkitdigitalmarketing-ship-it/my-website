@@ -22,7 +22,20 @@
     </image:image>
   </url>
 
-  <!-- 2. Contact Us & Chennai HQ Office -->
+  <!-- 2. Digital Marketing & Business Automation Services Hub -->
+  <url>
+    <loc>https://brandingkit.in/services.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://brandingkit.in/logo.png</image:loc>
+      <image:title>Digital Marketing &amp; Business Automation Services - Brandingkit Chennai</image:title>
+      <image:caption>Complete digital growth partner: Lead generation, CRM automation, WhatsApp Business bots, SEO, web development, Meta ads, and Google ads.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 3. Contact Us & Chennai HQ Office -->
   <url>
     <loc>https://brandingkit.in/contact.html</loc>
     <lastmod>2026-10-22</lastmod>

@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initConsultationModal();
   initChartInteractivity();
   initContactPage();
+  initServicesPage();
   initFloatingWhatsApp();
 });
 
@@ -92,7 +93,7 @@ function initPlatformTabs() {
    4. SERVICES SECTION CATEGORY FILTER
    ========================================================================== */
 function initServiceFilters() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.filter-btn, .category-tab-btn');
   const serviceCards = document.querySelectorAll('.service-card');
 
   if (!filterBtns.length || !serviceCards.length) return;
@@ -101,14 +102,20 @@ function initServiceFilters() {
     btn.addEventListener('click', () => {
       const category = btn.getAttribute('data-filter');
 
-      filterBtns.forEach(b => b.classList.remove('active'));
+      // Update button active state & ARIA
+      filterBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
 
+      // Filter cards
       serviceCards.forEach(card => {
-        const cardCat = card.getAttribute('data-category');
+        const cardCat = card.getAttribute('data-category') || '';
         if (category === 'all' || cardCat.includes(category)) {
           card.style.display = 'flex';
-          card.style.animation = 'fadeInPanel 0.4s ease forwards';
+          card.style.animation = 'fadeInPanel 0.35s ease forwards';
         } else {
           card.style.display = 'none';
         }
@@ -478,4 +485,98 @@ function initFloatingWhatsApp() {
     e.preventDefault();
   });
 }
+
+/* ==========================================================================
+   12. SERVICES PAGE INTERACTIVITY (Form, Chart Tooltips, Pre-fills)
+   ========================================================================== */
+function initServicesPage() {
+  const inquiryForm = document.getElementById('servicesInquiryForm');
+  const toast = document.getElementById('toastNotice');
+
+  function showToast(message) {
+    if (!toast) return;
+    const toastMsg = toast.querySelector('.toast-msg');
+    if (toastMsg) toastMsg.textContent = message;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 5500);
+  }
+
+  // Modern ARIA state synchronization for :user-invalid compliant fields
+  const syncAria = (el) => {
+    if (el && el.setAttribute) {
+      el.setAttribute('aria-invalid', el.matches(':user-invalid') ? 'true' : 'false');
+    }
+  };
+  document.addEventListener('blur', (e) => syncAria(e.target), true);
+  document.addEventListener('input', (e) => {
+    if (e.target.hasAttribute && e.target.hasAttribute('aria-invalid')) syncAria(e.target);
+  });
+
+  // Services Page Main Inquiry Form Submission
+  if (inquiryForm) {
+    inquiryForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const fullName = document.getElementById('serviceFullName')?.value?.trim() || '';
+      const businessName = document.getElementById('serviceBusinessName')?.value?.trim() || '';
+      const phone = document.getElementById('servicePhone')?.value?.trim() || '';
+      const email = document.getElementById('serviceEmail')?.value?.trim() || '';
+      const service = document.getElementById('serviceInterested')?.value || 'All-in-One Growth Stack';
+      const budget = document.getElementById('serviceBudget')?.value || 'Not Specified';
+      const goals = document.getElementById('serviceGoals')?.value?.trim() || '';
+
+      // Basic client-side check
+      if (!fullName || !phone || !email || !businessName) {
+        showToast('Please fill in all required fields.');
+        return;
+      }
+
+      showToast(`Thank you, ${fullName}! Your growth consultation request for ${businessName} has been received. Connecting to WhatsApp...`);
+
+      // WhatsApp routing payload with all submitted parameters
+      const waText = encodeURIComponent(
+        `Hi Brandingkit Team, I am requesting a free consultation from your Services page.\n\n` +
+        `👤 Name: ${fullName}\n` +
+        `🏢 Business: ${businessName}\n` +
+        `📱 Phone: ${phone}\n` +
+        `✉️ Email: ${email}\n` +
+        `🎯 Service Interested: ${service}\n` +
+        `💰 Monthly Budget: ${budget}\n` +
+        `🚀 Business Goals: ${goals || 'Scale qualified leads and automate workflows'}`
+      );
+
+      setTimeout(() => {
+        window.open(`https://wa.me/917904053790?text=${waText}`, '_blank');
+      }, 1200);
+
+      inquiryForm.reset();
+    });
+  }
+
+  // Pre-fill Consultation Modal when clicking service card CTAs
+  const serviceActionBtns = document.querySelectorAll('.service-card [data-service]');
+  serviceActionBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetService = btn.getAttribute('data-service');
+      const selectBox = document.getElementById('serviceInterested');
+      if (selectBox && targetService) {
+        selectBox.value = targetService;
+      }
+    });
+  });
+
+  // Interactive Chart Tooltips in Hero Dashboard
+  const chartPoints = document.querySelectorAll('.dash-chart-svg .chart-point');
+  chartPoints.forEach(point => {
+    point.addEventListener('mouseenter', () => {
+      point.setAttribute('r', '6');
+      point.setAttribute('stroke-width', '3');
+    });
+    point.addEventListener('mouseleave', () => {
+      point.setAttribute('r', '4');
+      point.setAttribute('stroke-width', '2');
+    });
+  });
+}
+
 
