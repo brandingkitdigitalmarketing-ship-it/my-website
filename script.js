@@ -93,8 +93,8 @@ function initPlatformTabs() {
    4. SERVICES SECTION CATEGORY FILTER
    ========================================================================== */
 function initServiceFilters() {
-  const filterBtns = document.querySelectorAll('.filter-btn, .category-tab-btn');
-  const serviceCards = document.querySelectorAll('.service-card');
+  const filterBtns = document.querySelectorAll('.filter-btn, .category-tab-btn, .srv-tab-pill');
+  const serviceCards = document.querySelectorAll('.service-card, .srv-card');
 
   if (!filterBtns.length || !serviceCards.length) return;
 
