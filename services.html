@@ -330,10 +330,10 @@
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a href="index.html#about">About</a></li>
           <li class="nav-item"><a href="services.html" class="active" aria-current="page">Services</a></li>
-          <li class="nav-item"><a href="index.html#case-studies">Portfolio</a></li>
-          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="https://crmautomation.brandingkit.in/" target="_blank" rel="noopener">CRM</a></li>
+          <li class="nav-item"><a href="https://hrmmangement.brandingkit.in/" target="_blank" rel="noopener">HRMS</a></li>
+          <li class="nav-item"><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -381,10 +381,10 @@
   <div class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
     <ul class="mobile-drawer-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#about">About</a></li>
       <li><a href="services.html" class="active">Services</a></li>
-      <li><a href="index.html#case-studies">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://crmautomation.brandingkit.in/" target="_blank" rel="noopener">CRM Automation</a></li>
+      <li><a href="https://hrmmangement.brandingkit.in/" target="_blank" rel="noopener">HRMS Management</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
     <div>
       <button class="theme-toggle-btn mobile-theme-btn" aria-label="Toggle Light / Dark Theme">
@@ -414,170 +414,298 @@
     </div>
   </div>
 
-    <main id="main-content" class="srv-main">
+  <main id="main-content">
 
     <!-- ==========================================================================
-         1. HERO SECTION (HIGH IMPACT TWO-COLUMN WITH COMPOSITE DASHBOARD)
+         BREADCRUMB NAVIGATION
          ========================================================================== -->
-    <section class="srv-hero-section">
+    <div class="container">
+      <nav class="services-breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li class="separator" aria-hidden="true">/</li>
+          <li aria-current="page">Services</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- ==========================================================================
+         SECTION 2: HERO SECTION (Impactful Two-Column Layout)
+         ========================================================================== -->
+    <section class="services-hero">
       <div class="container">
-        <div class="srv-hero-grid">
+        <div class="services-hero-grid">
           
-          <!-- Left Column: Copy & CTAs -->
-          <div class="srv-hero-left">
-            <div class="srv-pill-badge">
-              <span class="srv-badge-dot"></span>
-              OUR SERVICES
+          <!-- Left Column: Value Proposition & CTAs -->
+          <div class="services-hero-left">
+            <div class="hero-eyebrow-badge">
+              <span class="pulse-dot"></span>
+              YOUR COMPLETE DIGITAL GROWTH PARTNER
             </div>
 
-            <h1 class="srv-hero-title">
-              Everything Your Business<br>
-              Needs to <span class="srv-gradient-text">Grow.</span><br>
-              All Under One Roof.
+            <h1 class="services-hero-title">
+              Everything Your Business Needs to Grow. <span class="text-gradient">All Under One Roof.</span>
             </h1>
 
-            <p class="srv-hero-desc">
+            <p class="services-hero-desc">
               From high-quality lead generation and performance marketing to SEO, website development, CRM, and AI-powered business automation, Brandingkit helps your business attract customers, streamline operations, and scale smarter.
             </p>
 
-            <div class="srv-hero-actions">
-              <a href="#consultation" class="srv-btn-primary">
+            <div class="services-hero-actions">
+              <a href="#consultation" class="btn btn-primary open-consultation-btn" id="heroPrimaryCta">
                 <span>Get Free Consultation</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
               </a>
-              <a href="#services-catalog" class="srv-btn-secondary">
+
+              <a href="#all-services" class="btn btn-outline" id="heroSecondaryCta">
                 <span>Explore Our Services</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
               </a>
             </div>
 
-            <div class="srv-hero-tags">
-              <span class="srv-hero-tag">
-                <span class="srv-tag-bullet"></span>
-                Digital Marketing
+            <div class="services-hero-support-text">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              <span>Digital Marketing + Automation + Technology | Chennai, India</span>
+            </div>
+
+            <!-- Micro-Trust Tags -->
+            <div class="hero-trust-tags">
+              <span class="hero-trust-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                300%+ Avg Pipeline Growth
               </span>
-              <span class="srv-hero-tag">
-                <span class="srv-tag-bullet"></span>
-                Business Automation
+              <span class="hero-trust-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                &lt;15 Min WhatsApp Reply
               </span>
-              <span class="srv-hero-tag">
-                <span class="srv-tag-bullet"></span>
-                Technology Partner
+              <span class="hero-trust-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                End-to-End CRM Automation
               </span>
             </div>
           </div>
 
-          <!-- Right Column: Signature Floating Dashboard Composition -->
-          <div class="srv-hero-visual" aria-label="Live Marketing &amp; Automation Cockpit">
-            <div class="srv-visual-glow"></div>
-            
-            <div class="srv-visual-stage">
-
-              <!-- Real Businessman Portrait Frame -->
-              <div class="srv-portrait-card">
-                <img src="assets/hero-businessman.jpg" alt="Brandingkit Growth Specialist" class="srv-portrait-img">
-              </div>
-
-              <!-- Stat Card 1: Total Leads (Top Left) -->
-              <div class="srv-float-card srv-card-leads">
-                <div class="srv-card-toprow">
-                  <span class="srv-card-label">Total Leads</span>
-                  <div class="srv-channel-icons">
-                    <span class="srv-channel-chip" title="Meta Ads">
-                      <svg viewBox="0 0 24 24" width="13" height="13" fill="#0081fb"><path d="M16.99 7.02c-1.39 0-2.45.69-3.26 1.7-.81-1.01-1.87-1.7-3.26-1.7C7.87 7.02 6 9.07 6 12s1.87 4.98 4.47 4.98c1.39 0 2.45-.69 3.26-1.7.81 1.01 1.87 1.7 3.26 1.7 2.6 0 4.47-2.05 4.47-4.98s-1.87-4.98-4.47-4.98zm-6.52 7.78c-1.63 0-2.61-1.33-2.61-2.8 0-1.47.98-2.8 2.61-2.8 1.15 0 1.95.73 2.5 1.63-.55.9-1.35 1.63-2.5 1.63zm6.05 0c-1.15 0-1.95-.73-2.5-1.63.55-.9 1.35-1.63 2.5-1.63 1.63 0 2.61 1.33 2.61 2.8 0 1.47-.98 2.8-2.61 2.8z"/></svg>
-                    </span>
-                    <span class="srv-channel-chip" title="Google Ads">
-                      <svg viewBox="0 0 24 24" width="13" height="13"><path fill="#fabb05" d="M3.7 13.9l5.8-10.1c.8-1.4 2.6-1.9 4-1.1l.1.1c1.4.8 1.9 2.6 1.1 4L8.9 16.9c-.8 1.4-2.6 1.9-4 1.1l-.1-.1c-1.4-.8-1.9-2.6-1.1-4z"/><path fill="#4285f4" d="M14.6 2.8c1.4-.8 3.2-.3 4 1.1l1.7 3c.8 1.4.3 3.2-1.1 4l-1.7 1-4-6.9 1.1-2.2z"/><ellipse fill="#34a853" cx="6.5" cy="18.5" rx="3.5" ry="3.5"/></svg>
-                    </span>
-                    <span class="srv-channel-chip" title="WhatsApp Business">
-                      <svg viewBox="0 0 24 24" width="13" height="13" fill="#25d366"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.37c1.45.78 3.08 1.2 4.74 1.2 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.04 14.69 2 12.04 2z"/></svg>
-                    </span>
-                  </div>
+          <!-- Right Column: Premium Floating Digital Growth Dashboard -->
+          <div class="services-hero-right">
+            <div class="hero-growth-dashboard" aria-label="Live Growth Engine Dashboard Preview">
+              
+              <!-- Window Bar Header -->
+              <div class="dash-window-header">
+                <div class="dash-window-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
                 </div>
-                <div class="srv-card-val">1,248</div>
-                <svg viewBox="0 0 200 32" class="srv-mini-spark" fill="none">
-                  <path d="M0,26 Q40,18 80,22 T140,8 T200,2" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-
-              <!-- Stat Card 2: Meta Ads (Middle Left) -->
-              <div class="srv-float-card srv-card-meta">
-                <div class="srv-stat-meta-row">
-                  <svg viewBox="0 0 24 24" width="17" height="17" fill="#0081fb"><path d="M16.99 7.02c-1.39 0-2.45.69-3.26 1.7-.81-1.01-1.87-1.7-3.26-1.7C7.87 7.02 6 9.07 6 12s1.87 4.98 4.47 4.98c1.39 0 2.45-.69 3.26-1.7.81 1.01 1.87 1.7 3.26 1.7 2.6 0 4.47-2.05 4.47-4.98s-1.87-4.98-4.47-4.98zm-6.52 7.78c-1.63 0-2.61-1.33-2.61-2.8 0-1.47.98-2.8 2.61-2.8 1.15 0 1.95.73 2.5 1.63-.55.9-1.35 1.63-2.5 1.63zm6.05 0c-1.15 0-1.95-.73-2.5-1.63.55-.9 1.35-1.63 2.5-1.63 1.63 0 2.61 1.33 2.61 2.8 0 1.47-.98 2.8-2.61 2.8z"/></svg>
-                  <span class="srv-card-label">Meta Ads</span>
+                <div class="dash-window-title">brandingkit-growth-cockpit.live</div>
+                <div class="dash-live-badge">
+                  <span class="live-dot"></span>
+                  <span>SYNC ENGINE ON</span>
                 </div>
-                <div class="srv-card-val">356</div>
-                <span class="srv-growth-pill">↑ 12.4% vs last mo</span>
               </div>
 
-              <!-- Stat Card 3: Google Ads (Middle Center) -->
-              <div class="srv-float-card srv-card-google">
-                <div class="srv-stat-meta-row">
-                  <svg viewBox="0 0 24 24" width="17" height="17"><path fill="#fabb05" d="M3.7 13.9l5.8-10.1c.8-1.4 2.6-1.9 4-1.1l.1.1c1.4.8 1.9 2.6 1.1 4L8.9 16.9c-.8 1.4-2.6 1.9-4 1.1l-.1-.1c-1.4-.8-1.9-2.6-1.1-4z"/><path fill="#4285f4" d="M14.6 2.8c1.4-.8 3.2-.3 4 1.1l1.7 3c.8 1.4.3 3.2-1.1 4l-1.7 1-4-6.9 1.1-2.2z"/><ellipse fill="#34a853" cx="6.5" cy="18.5" rx="3.5" ry="3.5"/></svg>
-                  <span class="srv-card-label">Google Ads</span>
-                </div>
-                <div class="srv-card-val">412</div>
-                <span class="srv-growth-pill">↑ 18.2% vs last mo</span>
-              </div>
-
-              <!-- Stat Card 4: Conversions (Lower Left) -->
-              <div class="srv-float-card srv-card-conv">
-                <span class="srv-card-label">Conversions</span>
-                <div class="srv-card-val">128</div>
-                <span class="srv-growth-pill">↑ 8.6%</span>
-                <svg viewBox="0 0 120 20" class="srv-mini-spark" fill="none">
-                  <path d="M0,16 Q30,14 60,8 T120,2" stroke="#10b981" stroke-width="2.2" stroke-linecap="round"/>
-                </svg>
-              </div>
-
-              <!-- Stat Card 5: WhatsApp Automation (Middle Right) -->
-              <div class="srv-float-card srv-card-wa">
-                <div class="srv-wa-header">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="#25d366"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.37c1.45.78 3.08 1.2 4.74 1.2 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.04 14.69 2 12.04 2z"/></svg>
-                  <span>WhatsApp Automation</span>
-                </div>
-                <ul class="srv-wa-list">
-                  <li class="srv-wa-step"><span class="srv-wa-dot"></span> New Lead Received</li>
-                  <li class="srv-wa-step"><span class="srv-wa-dot"></span> Auto Reply Sent</li>
-                  <li class="srv-wa-step"><span class="srv-wa-dot"></span> Added to CRM</li>
-                </ul>
-              </div>
-
-              <!-- Stat Card 6: CRM Dashboard Feed (Bottom) -->
-              <div class="srv-float-card srv-card-crm">
-                <div class="srv-crm-head">
-                  <span class="srv-crm-title">CRM Dashboard</span>
-                  <span style="font-family: var(--font-mono); font-size: 0.68rem; color: #38bdf8;">Live Sync</span>
-                </div>
-                <div class="srv-crm-feed-list">
-                  <div class="srv-crm-row">
-                    <div class="srv-crm-user">
-                      <div class="srv-crm-avatar">RK</div>
-                      <span>Rahul Kumar</span>
+              <!-- Dashboard Inner Modules -->
+              <div class="dash-inner-content">
+                
+                <!-- 1. Top Metrics Strip (Meta & Google Ads Campaign Performance) -->
+                <div class="dash-metrics-grid">
+                  <div class="dash-metric-card">
+                    <div class="dash-metric-label">Paid Impressions</div>
+                    <div class="dash-metric-val">1.84M</div>
+                    <div class="dash-metric-growth">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                      </svg>
+                      +38.2%
                     </div>
-                    <span class="srv-crm-badge badge-blue">New Lead • Website Form</span>
-                    <span style="font-size: 0.65rem; color: var(--text-subtle);">2m ago</span>
                   </div>
-                  <div class="srv-crm-row">
-                    <div class="srv-crm-user">
-                      <div class="srv-crm-avatar" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">PS</div>
-                      <span>Priya Sharma</span>
+
+                  <div class="dash-metric-card">
+                    <div class="dash-metric-label">Blended ROAS</div>
+                    <div class="dash-metric-val">4.62x</div>
+                    <div class="dash-metric-growth">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                      </svg>
+                      Top Tier
                     </div>
-                    <span class="srv-crm-badge badge-purple">Follow-up • WhatsApp</span>
-                    <span style="font-size: 0.65rem; color: var(--text-subtle);">15m ago</span>
                   </div>
-                  <div class="srv-crm-row">
-                    <div class="srv-crm-user">
-                      <div class="srv-crm-avatar" style="background: linear-gradient(135deg, #10b981, #06b6d4);">SR</div>
-                      <span>Suresh R</span>
+
+                  <div class="dash-metric-card">
+                    <div class="dash-metric-label">Avg CTR</div>
+                    <div class="dash-metric-val">3.85%</div>
+                    <div class="dash-metric-growth">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                      </svg>
+                      2.4x Bench
                     </div>
-                    <span class="srv-crm-badge badge-green">Converted • Booked</span>
-                    <span style="font-size: 0.65rem; color: var(--text-subtle);">1h ago</span>
+                  </div>
+
+                  <div class="dash-metric-card">
+                    <div class="dash-metric-label">Lead Qualified</div>
+                    <div class="dash-metric-val">68.4%</div>
+                    <div class="dash-metric-growth">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                      </svg>
+                      Verified
+                    </div>
                   </div>
                 </div>
-              </div>
 
+                <!-- 2. Conversion Funnel & Pipeline -->
+                <div class="dash-funnel-strip">
+                  <div class="dash-funnel-header">
+                    <span>CONVERSION FUNNEL PIPELINE</span>
+                    <span style="color: #38bdf8;">Real-time Automated Flow</span>
+                  </div>
+                  <div class="funnel-steps-row">
+                    <div class="funnel-step-box">
+                      <span class="funnel-step-num">42,500</span>
+                      <span class="funnel-step-lbl">Ad Visitors</span>
+                    </div>
+                    <div class="funnel-step-box">
+                      <span class="funnel-step-num">3,840</span>
+                      <span class="funnel-step-lbl">Inquiries</span>
+                    </div>
+                    <div class="funnel-step-box">
+                      <span class="funnel-step-num">1,290</span>
+                      <span class="funnel-step-lbl">MQL / Bookings</span>
+                    </div>
+                    <div class="funnel-step-box" style="border-color: rgba(16, 185, 129, 0.4);">
+                      <span class="funnel-step-num" style="color: #10b981;">412</span>
+                      <span class="funnel-step-lbl" style="color: #34d399; font-weight: 600;">Won Deals</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3. SEO Traffic Growth Chart (Interactive SVG) -->
+                <div class="dash-chart-card">
+                  <div class="dash-chart-header">
+                    <div class="dash-chart-title">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2.5">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                      </svg>
+                      <span>SEO Organic Keyword Growth (Chennai &amp; India)</span>
+                    </div>
+                    <span class="dash-chart-badge">+186% Organic Lift</span>
+                  </div>
+                  <svg class="dash-chart-svg" viewBox="0 0 500 90" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#2563eb" stop-opacity="0.35"/>
+                        <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.0"/>
+                      </linearGradient>
+                      <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stop-color="#38bdf8"/>
+                        <stop offset="50%" stop-color="#3b82f6"/>
+                        <stop offset="100%" stop-color="#a855f7"/>
+                      </linearGradient>
+                    </defs>
+                    <!-- Area under curve -->
+                    <path d="M 0,80 Q 80,68 150,55 T 300,32 T 420,18 T 500,8 L 500,90 L 0,90 Z" fill="url(#chartGrad)"/>
+                    <!-- Smooth line -->
+                    <path d="M 0,80 Q 80,68 150,55 T 300,32 T 420,18 T 500,8" fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round"/>
+                    <!-- Interactive Data Points -->
+                    <circle class="chart-point" cx="80" cy="68" r="4" fill="#38bdf8" stroke="#07090e" stroke-width="2"/>
+                    <circle class="chart-point" cx="150" cy="55" r="4" fill="#3b82f6" stroke="#07090e" stroke-width="2"/>
+                    <circle class="chart-point" cx="300" cy="32" r="4" fill="#8b5cf6" stroke="#07090e" stroke-width="2"/>
+                    <circle class="chart-point" cx="420" cy="18" r="4" fill="#a855f7" stroke="#07090e" stroke-width="2"/>
+                    <circle class="chart-point" cx="500" cy="8" r="5" fill="#34d399" stroke="#07090e" stroke-width="2"/>
+                  </svg>
+                </div>
+
+                <!-- 4. Two-Column Live Panels: CRM Leads + WhatsApp Chatbot Preview -->
+                <div class="dash-split-row">
+                  
+                  <!-- Left Panel: CRM Lead Management -->
+                  <div class="dash-crm-panel">
+                    <div class="panel-mini-head">
+                      <span>CRM LEAD PIPELINE</span>
+                      <span style="font-family: var(--font-mono); font-size: 0.65rem; color: #10b981;">● Auto-Assigned</span>
+                    </div>
+
+                    <div class="crm-lead-item">
+                      <div>
+                        <div class="crm-lead-name">Dr. Arvind Clinic</div>
+                        <div style="font-size: 0.65rem; color: var(--text-muted);">Health Checkup Pack</div>
+                      </div>
+                      <span class="crm-lead-tag tag-google">Google Ads</span>
+                    </div>
+
+                    <div class="crm-lead-item">
+                      <div>
+                        <div class="crm-lead-name">Casagrand Realty Lead</div>
+                        <div style="font-size: 0.65rem; color: var(--text-muted);">3BHK Villa Inquiry</div>
+                      </div>
+                      <span class="crm-lead-tag tag-meta">Meta Ads</span>
+                    </div>
+
+                    <div class="crm-lead-item">
+                      <div>
+                        <div class="crm-lead-name">D2C Organic Apparel</div>
+                        <div style="font-size: 0.65rem; color: var(--text-muted);">Website Custom Store</div>
+                      </div>
+                      <span class="crm-lead-tag tag-seo">SEO Organic</span>
+                    </div>
+                  </div>
+
+                  <!-- Right Panel: WhatsApp Chatbot Simulator -->
+                  <div class="dash-wa-panel">
+                    <div class="panel-mini-head">
+                      <span>WHATSAPP BOT PREVIEW</span>
+                      <span style="color: #25d366; font-size: 0.7rem; font-family: var(--font-mono);">Official API</span>
+                    </div>
+
+                    <div class="wa-chat-bubble wa-bubble-incoming">
+                      Hi, looking for lead generation for our Chennai real estate launch.
+                    </div>
+
+                    <div class="wa-chat-bubble wa-bubble-outgoing">
+                      Welcome to Brandingkit! 🚀 Brochure delivered to your WhatsApp. Our growth architect is connecting in 2 mins.
+                    </div>
+
+                    <div class="wa-sync-pill">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <span>Lead auto-synced to CRM in 1.4s</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- 5. Connected Workflow Strip -->
+                <div class="dash-flow-connectors">
+                  <span>Ad Click</span>
+                  <span class="flow-node-arrow">→</span>
+                  <span class="flow-node-dot"></span>
+                  <span>Landing Page</span>
+                  <span class="flow-node-arrow">→</span>
+                  <span class="flow-node-dot"></span>
+                  <span>WhatsApp Bot</span>
+                  <span class="flow-node-arrow">→</span>
+                  <span class="flow-node-dot"></span>
+                  <span>CRM Assignment</span>
+                  <span class="flow-node-arrow">→</span>
+                  <span style="color: #34d399; font-weight: 700;">Won Customer</span>
+                </div>
+
+              </div>
             </div>
           </div>
 
@@ -586,510 +714,1027 @@
     </section>
 
     <!-- ==========================================================================
-         2. COMPLETE DIGITAL GROWTH & BUSINESS AUTOMATION SOLUTIONS (CATALOG)
+         SECTION 3 & 4: SERVICES OVERVIEW & CATEGORY FILTER (All 8 Core Services)
          ========================================================================== -->
-    <section class="srv-catalog-section" id="services-catalog">
+    <section class="services-section" id="all-services" style="padding-top: 1rem;">
       <div class="container">
         
-        <div class="srv-section-header">
-          <div class="srv-pill-badge">
-            <span class="srv-badge-dot"></span>
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
             OUR SERVICES
           </div>
-          <h2 class="srv-section-title">
-            Complete Digital Growth &amp;<br>
-            Business Automation Solutions
+          <h2 class="section-title">
+            Complete Digital Growth &amp; <span class="text-gradient">Business Automation</span> Solutions
           </h2>
-          <p class="srv-section-desc">
+          <p class="section-desc">
             One strategic partner for your marketing, technology, customer acquisition, and business automation needs.
           </p>
         </div>
 
-        <!-- Filter Tabs (Pill style matching mockup) -->
-        <div class="srv-filter-tabs" role="tablist">
-          <button class="srv-tab-pill active" data-filter="all" role="tab" aria-selected="true">All Services</button>
-          <button class="srv-tab-pill" data-filter="marketing-ads" role="tab" aria-selected="false">Marketing &amp; Advertising</button>
-          <button class="srv-tab-pill" data-filter="seo-websites" role="tab" aria-selected="false">SEO &amp; Websites</button>
-          <button class="srv-tab-pill" data-filter="automation-crm" role="tab" aria-selected="false">Automation &amp; CRM</button>
-          <button class="srv-tab-pill" data-filter="social-creative" role="tab" aria-selected="false">Social Media &amp; Creative</button>
+        <!-- Section 4: Interactive Category Filter Tabs -->
+        <div class="services-category-filter-wrap">
+          <nav class="services-category-nav" role="tablist" aria-label="Services Category Filter">
+            <button class="category-tab-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span>All Services</span>
+              <span class="tab-count-pill">8</span>
+            </button>
+            <button class="category-tab-btn" data-filter="marketing-ads" role="tab" aria-selected="false">
+              <span>Marketing &amp; Advertising</span>
+              <span class="tab-count-pill">3</span>
+            </button>
+            <button class="category-tab-btn" data-filter="seo-websites" role="tab" aria-selected="false">
+              <span>SEO &amp; Websites</span>
+              <span class="tab-count-pill">2</span>
+            </button>
+            <button class="category-tab-btn" data-filter="automation-crm" role="tab" aria-selected="false">
+              <span>Automation &amp; CRM</span>
+              <span class="tab-count-pill">2</span>
+            </button>
+            <button class="category-tab-btn" data-filter="social-creative" role="tab" aria-selected="false">
+              <span>Social Media &amp; Creative</span>
+              <span class="tab-count-pill">2</span>
+            </button>
+          </nav>
         </div>
 
-        <!-- 8 Service Cards Grid (Desktop 4x2, Mobile 1 col) -->
-        <div class="srv-cards-grid">
-          
-          <!-- Card 1: Business Automation -->
-          <article class="srv-card" data-category="automation-crm" id="service-automation">
-            <div class="srv-card-top">
-              <div class="srv-card-icon" style="background: rgba(139, 92, 246, 0.15); border: 1px solid rgba(139, 92, 246, 0.35);">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="3"/>
-                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                </svg>
-              </div>
-              <svg class="srv-card-corner-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-            </div>
-            <h3 class="srv-card-title">Business Automation</h3>
-            <p class="srv-card-desc">Automate repetitive tasks, streamline operations, and improve productivity.</p>
-            <ul class="srv-card-bullets">
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> AI Automation</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> CRM Automation</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Workflow Automation</li>
-            </ul>
-            <a href="#consultation" class="srv-card-btn open-consultation-btn">
-              <span>Explore Automation</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
+        <!-- 8 Core Service Cards Grid -->
+        <div class="services-grid-wrapper">
+          <div class="services-grid">
 
-          <!-- Card 2: Lead Generation -->
-          <article class="srv-card" data-category="marketing-ads" id="service-leadgen">
-            <div class="srv-card-top">
-              <div class="srv-card-icon" style="background: rgba(244, 63, 94, 0.15); border: 1px solid rgba(244, 63, 94, 0.35);">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
-                </svg>
-              </div>
-              <svg class="srv-card-corner-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-            </div>
-            <h3 class="srv-card-title">Lead Generation</h3>
-            <p class="srv-card-desc">Generate qualified business inquiries through targeted advertising and funnels.</p>
-            <ul class="srv-card-bullets">
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Meta &amp; Google Ads</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Landing Page Optimization</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> CRM Integration</li>
-            </ul>
-            <a href="#consultation" class="srv-card-btn open-consultation-btn">
-              <span>Generate More Leads</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
+            <!-- Service 01 — Business Automation -->
+            <article class="service-card" data-category="automation-crm" id="service-automation">
+              <div class="service-card-top">
+                <div class="service-header-row">
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                  </div>
+                  <span class="service-number">01</span>
+                </div>
 
-          <!-- Card 3: Search Engine Optimization -->
-          <article class="srv-card" data-category="seo-websites" id="service-seo">
-            <div class="srv-card-top">
-              <div class="srv-card-icon" style="background: rgba(6, 182, 212, 0.15); border: 1px solid rgba(6, 182, 212, 0.35);">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="11" cy="11" r="8"/>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                  <line x1="11" y1="8" x2="11" y2="14"/>
-                  <line x1="8" y1="11" x2="14" y2="11"/>
-                </svg>
-              </div>
-              <svg class="srv-card-corner-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-            </div>
-            <h3 class="srv-card-title">Search Engine Optimization</h3>
-            <p class="srv-card-desc">Improve organic visibility and attract high-intent visitors.</p>
-            <ul class="srv-card-bullets">
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Technical SEO</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Local SEO</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> AIO &amp; GEO</li>
-            </ul>
-            <a href="#consultation" class="srv-card-btn open-consultation-btn">
-              <span>Improve My Rankings</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
+                <div class="service-card-chip">Automation &amp; CRM</div>
+                <h3 class="service-title">Business Automation</h3>
+                <p class="service-desc">
+                  Automate repetitive tasks, streamline operations, and improve productivity using intelligent business workflows.
+                </p>
 
-          <!-- Card 4: Website Development -->
-          <article class="srv-card" data-category="seo-websites" id="service-webdev">
-            <div class="srv-card-top">
-              <div class="srv-card-icon" style="background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.35);">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
-              <svg class="srv-card-corner-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-            </div>
-            <h3 class="srv-card-title">Website Development</h3>
-            <p class="srv-card-desc">Build fast, responsive, user-friendly websites designed to convert.</p>
-            <ul class="srv-card-bullets">
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Business Websites</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> E-commerce Websites</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> WordPress Development</li>
-            </ul>
-            <a href="#consultation" class="srv-card-btn open-consultation-btn">
-              <span>Build My Website</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
+                <div class="service-metric-highlight">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Eliminates 80%+ manual data entry &amp; delay</span>
+                </div>
 
-          <!-- Card 5: Meta Ads -->
-          <article class="srv-card" data-category="marketing-ads" id="service-meta-ads">
-            <div class="srv-card-top">
-              <div class="srv-card-icon" style="background: rgba(0, 129, 251, 0.15); border: 1px solid rgba(0, 129, 251, 0.35);">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="#0081fb"><path d="M16.99 7.02c-1.39 0-2.45.69-3.26 1.7-.81-1.01-1.87-1.7-3.26-1.7C7.87 7.02 6 9.07 6 12s1.87 4.98 4.47 4.98c1.39 0 2.45-.69 3.26-1.7.81 1.01 1.87 1.7 3.26 1.7 2.6 0 4.47-2.05 4.47-4.98s-1.87-4.98-4.47-4.98zm-6.52 7.78c-1.63 0-2.61-1.33-2.61-2.8 0-1.47.98-2.8 2.61-2.8 1.15 0 1.95.73 2.5 1.63-.55.9-1.35 1.63-2.5 1.63zm6.05 0c-1.15 0-1.95-.73-2.5-1.63.55-.9 1.35-1.63 2.5-1.63 1.63 0 2.61 1.33 2.61 2.8 0 1.47-.98 2.8-2.61 2.8z"/></svg>
+                <ul class="service-features-list">
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>AI Automation</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>CRM Automation</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Sales Automation</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Workflow Automation</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Lead Assignment Automation</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Customer Follow-up Automation</span>
+                  </li>
+                </ul>
               </div>
-              <svg class="srv-card-corner-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-            </div>
-            <h3 class="srv-card-title">Meta Ads</h3>
-            <p class="srv-card-desc">Reach the right audiences on Facebook and Instagram with high-performing ads.</p>
-            <ul class="srv-card-bullets">
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Facebook &amp; Instagram Ads</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Lead &amp; Sales Campaigns</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Retargeting Campaigns</li>
-            </ul>
-            <a href="#consultation" class="srv-card-btn open-consultation-btn">
-              <span>Run Meta Ads</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
 
-          <!-- Card 6: Google Ads -->
-          <article class="srv-card" data-category="marketing-ads" id="service-google-ads">
-            <div class="srv-card-top">
-              <div class="srv-card-icon" style="background: rgba(250, 187, 5, 0.15); border: 1px solid rgba(250, 187, 5, 0.35);">
-                <svg width="28" height="28" viewBox="0 0 24 24"><path fill="#fabb05" d="M3.7 13.9l5.8-10.1c.8-1.4 2.6-1.9 4-1.1l.1.1c1.4.8 1.9 2.6 1.1 4L8.9 16.9c-.8 1.4-2.6 1.9-4 1.1l-.1-.1c-1.4-.8-1.9-2.6-1.1-4z"/><path fill="#4285f4" d="M14.6 2.8c1.4-.8 3.2-.3 4 1.1l1.7 3c.8 1.4.3 3.2-1.1 4l-1.7 1-4-6.9 1.1-2.2z"/><ellipse fill="#34a853" cx="6.5" cy="18.5" rx="3.5" ry="3.5"/></svg>
+              <div class="service-card-actions">
+                <a href="#consultation" class="btn btn-primary open-consultation-btn" data-service="Business Automation">
+                  <span>Explore Automation</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
               </div>
-              <svg class="srv-card-corner-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-            </div>
-            <h3 class="srv-card-title">Google Ads</h3>
-            <p class="srv-card-desc">Connect with customers actively searching for your products and services.</p>
-            <ul class="srv-card-bullets">
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Search &amp; Performance Max</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Display &amp; YouTube Ads</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Conversion Tracking</li>
-            </ul>
-            <a href="#consultation" class="srv-card-btn open-consultation-btn">
-              <span>Run Google Ads</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
+            </article>
 
-          <!-- Card 7: Social Media Marketing -->
-          <article class="srv-card" data-category="social-creative" id="service-smm">
-            <div class="srv-card-top">
-              <div class="srv-card-icon" style="background: rgba(225, 48, 108, 0.15); border: 1px solid rgba(225, 48, 108, 0.35);">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e1306c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                </svg>
+            <!-- Service 02 — Lead Generation -->
+            <article class="service-card" data-category="marketing-ads automation-crm" id="service-leadgen">
+              <div class="service-card-top">
+                <div class="service-header-row">
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <circle cx="12" cy="12" r="6"/>
+                      <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                  </div>
+                  <span class="service-number">02</span>
+                </div>
+
+                <div class="service-card-chip">Marketing &amp; Advertising</div>
+                <h3 class="service-title">Lead Generation</h3>
+                <p class="service-desc">
+                  Generate qualified business inquiries through targeted advertising, conversion-focused landing pages, and automated follow-ups.
+                </p>
+
+                <div class="service-metric-highlight">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>High-intent leads with &lt;15 min auto-followup</span>
+                </div>
+
+                <ul class="service-features-list">
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Meta Lead Generation</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Google Lead Generation</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Landing Page Optimization</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Lead Funnels</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Lead Qualification</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>CRM Integration</span>
+                  </li>
+                </ul>
               </div>
-              <svg class="srv-card-corner-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-            </div>
-            <h3 class="srv-card-title">Social Media Marketing</h3>
-            <p class="srv-card-desc">Build brand awareness and maintain a consistent presence.</p>
-            <ul class="srv-card-bullets">
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Content Planning</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Reels Strategy</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Community Management</li>
-            </ul>
-            <a href="#consultation" class="srv-card-btn open-consultation-btn">
-              <span>Grow My Brand</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
 
-          <!-- Card 8: Creative Design & Video Editing -->
-          <article class="srv-card" data-category="social-creative" id="service-creative">
-            <div class="srv-card-top">
-              <div class="srv-card-icon" style="background: rgba(168, 85, 247, 0.15); border: 1px solid rgba(168, 85, 247, 0.35);">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="5 3 19 12 5 21 5 3"/>
-                </svg>
+              <div class="service-card-actions">
+                <a href="#consultation" class="btn btn-primary open-consultation-btn" data-service="Lead Generation">
+                  <span>Generate More Leads</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
               </div>
-              <svg class="srv-card-corner-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-            </div>
-            <h3 class="srv-card-title">Creative Design &amp; Video Editing</h3>
-            <p class="srv-card-desc">Communicate your brand message through compelling visuals and videos.</p>
-            <ul class="srv-card-bullets">
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Social Media Posters</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Ad Creatives</li>
-              <li class="srv-card-bullet"><span class="srv-bullet-dot"></span> Reels &amp; Promotional Videos</li>
-            </ul>
-            <a href="#consultation" class="srv-card-btn open-consultation-btn">
-              <span>Create My Content</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
+            </article>
 
+            <!-- Service 03 — Search Engine Optimization -->
+            <article class="service-card" data-category="seo-websites" id="service-seo">
+              <div class="service-card-top">
+                <div class="service-header-row">
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8"/>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                      <path d="M11 8v6M8 11h6"/>
+                    </svg>
+                  </div>
+                  <span class="service-number">03</span>
+                </div>
+
+                <div class="service-card-chip">SEO &amp; Websites</div>
+                <h3 class="service-title">Search Engine Optimization</h3>
+                <p class="service-desc">
+                  Improve organic visibility, attract high-intent visitors, and build long-term search presence across search engines and AI answer engines.
+                </p>
+
+                <div class="service-metric-highlight">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Rank #1 in Chennai and national commercial keywords</span>
+                </div>
+
+                <ul class="service-features-list">
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Technical SEO</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>On-Page SEO &amp; Off-Page SEO</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Local SEO &amp; Google Business Profile</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Keyword Research &amp; Clustering</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>AEO and GEO (AI &amp; Generative Engine Optimization)</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Real-time SEO Reporting</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="service-card-actions">
+                <a href="#consultation" class="btn btn-primary open-consultation-btn" data-service="SEO">
+                  <span>Improve My Rankings</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 04 — Website Development -->
+            <article class="service-card" data-category="seo-websites" id="service-webdev">
+              <div class="service-card-top">
+                <div class="service-header-row">
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="16 18 22 12 16 6"/>
+                      <polyline points="8 6 2 12 8 18"/>
+                      <line x1="10" y1="21" x2="14" y2="3"/>
+                    </svg>
+                  </div>
+                  <span class="service-number">04</span>
+                </div>
+
+                <div class="service-card-chip">SEO &amp; Websites</div>
+                <h3 class="service-title">Website Development</h3>
+                <p class="service-desc">
+                  Build fast, responsive, user-friendly websites designed to establish trust and turn visitors into customers.
+                </p>
+
+                <div class="service-metric-highlight">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Sub-second loading with 95+ PageSpeed scores</span>
+                </div>
+
+                <ul class="service-features-list">
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Business Websites</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Landing Pages</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>E-commerce Websites</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>WordPress &amp; Custom Web Development</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Mobile-Responsive Design</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Website Maintenance &amp; CRO</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="service-card-actions">
+                <a href="#consultation" class="btn btn-primary open-consultation-btn" data-service="Website Development">
+                  <span>Build My Website</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 05 — Meta Ads -->
+            <article class="service-card" data-category="marketing-ads" id="service-meta-ads">
+              <div class="service-card-top">
+                <div class="service-header-row">
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                  </div>
+                  <span class="service-number">05</span>
+                </div>
+
+                <div class="service-card-chip">Marketing &amp; Advertising</div>
+                <h3 class="service-title">Meta Ads</h3>
+                <p class="service-desc">
+                  Reach the right audiences on Facebook and Instagram with strategically planned and optimized advertising campaigns.
+                </p>
+
+                <div class="service-metric-highlight">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Targeted creative testing with 3x–6x blended ROAS</span>
+                </div>
+
+                <ul class="service-features-list">
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Facebook Ads &amp; Instagram Ads</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>High-Intent Lead Campaigns</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Sales &amp; Catalogue Ads</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Retargeting &amp; Custom Audiences</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Multi-Creative Testing Framework</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Live Campaign Reporting</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="service-card-actions">
+                <a href="#consultation" class="btn btn-primary open-consultation-btn" data-service="Meta Ads">
+                  <span>Run Meta Ads</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 06 — Google Ads -->
+            <article class="service-card" data-category="marketing-ads" id="service-google-ads">
+              <div class="service-card-top">
+                <div class="service-header-row">
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2a10 10 0 0 0-7.07 17.07l1.41-1.41A8 8 0 1 1 12 20v2a10 10 0 0 0 0-20z"/>
+                      <path d="M12 6v6l4 2"/>
+                    </svg>
+                  </div>
+                  <span class="service-number">06</span>
+                </div>
+
+                <div class="service-card-chip">Marketing &amp; Advertising</div>
+                <h3 class="service-title">Google Ads</h3>
+                <p class="service-desc">
+                  Connect your business with customers actively searching for your products and services with high-intent search ads.
+                </p>
+
+                <div class="service-metric-highlight">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Capture ready-to-buy commercial search traffic</span>
+                </div>
+
+                <ul class="service-features-list">
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Google Search Ads</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Performance Max (PMax) Campaigns</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Display Advertising &amp; YouTube Ads</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Dynamic Remarketing</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Negative Keyword &amp; Bidding Strategy</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Conversion Tracking &amp; ROI Optimization</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="service-card-actions">
+                <a href="#consultation" class="btn btn-primary open-consultation-btn" data-service="Google Ads">
+                  <span>Run Google Ads</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 07 — Social Media Marketing -->
+            <article class="service-card" data-category="social-creative" id="service-smm">
+              <div class="service-card-top">
+                <div class="service-header-row">
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                  </div>
+                  <span class="service-number">07</span>
+                </div>
+
+                <div class="service-card-chip">Social Media &amp; Creative</div>
+                <h3 class="service-title">Social Media Marketing</h3>
+                <p class="service-desc">
+                  Build brand awareness, strengthen audience relationships, and maintain a consistent presence across social platforms.
+                </p>
+
+                <div class="service-metric-highlight">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Viral reel hooks, community trust &amp; consistent brand voice</span>
+                </div>
+
+                <ul class="service-features-list">
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Instagram &amp; Facebook Management</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>LinkedIn B2B Authority Marketing</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Monthly Content Planning &amp; Copywriting</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Reels Strategy &amp; Video Concepts</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Community Management &amp; Engagement</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Performance &amp; Follower Analytics</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="service-card-actions">
+                <a href="#consultation" class="btn btn-primary open-consultation-btn" data-service="Social Media Marketing">
+                  <span>Grow My Brand</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 08 — Creative Design & Video Editing -->
+            <article class="service-card" data-category="social-creative" id="service-creative">
+              <div class="service-card-top">
+                <div class="service-header-row">
+                  <div class="service-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="23 7 16 12 23 17 23 7"/>
+                      <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                    </svg>
+                  </div>
+                  <span class="service-number">08</span>
+                </div>
+
+                <div class="service-card-chip">Social Media &amp; Creative</div>
+                <h3 class="service-title">Creative Design &amp; Video Editing</h3>
+                <p class="service-desc">
+                  Communicate your brand message through compelling visuals, engaging videos, and conversion-focused advertising creatives.
+                </p>
+
+                <div class="service-metric-highlight">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Thumb-stopping creatives engineered for direct response</span>
+                </div>
+
+                <ul class="service-features-list">
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Social Media Posters &amp; Carousels</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>High-Converting Ad Creatives</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Promotional Designs &amp; Banners</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Reels &amp; Short-Form Video Editing</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Product &amp; Explainer Videos</span>
+                  </li>
+                  <li class="service-feature-item">
+                    <span class="feature-check-icon">✓</span>
+                    <span>Motion Graphics &amp; Brand Guidelines</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="service-card-actions">
+                <a href="#consultation" class="btn btn-primary open-consultation-btn" data-service="Creative Design">
+                  <span>Create My Content</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+          </div>
         </div>
+
       </div>
     </section>
 
     <!-- ==========================================================================
-         3. BUSINESS AUTOMATION SPOTLIGHT & CRM ENGINE
+         SECTION 5: BUSINESS AUTOMATION SHOWCASE (Dark-Background Connected System)
          ========================================================================== -->
-    <section class="srv-spotlight-section" id="automation-engine">
+    <section class="automation-showcase-section" id="automation-showcase">
       <div class="container">
         
-        <div class="srv-spotlight-top">
-          <div class="srv-spotlight-left">
-            <div class="srv-pill-badge">
-              <span class="srv-badge-dot"></span>
-              BUSINESS AUTOMATION
-            </div>
-            <h2>
-              Turn Your Business Into an Automated Growth <span class="srv-gradient-text">Engine</span>
-            </h2>
-            <p>
-              Capture every inquiry, automate follow-ups, manage customer relationships, and create a connected system that helps your team work smarter.
-            </p>
-            <a href="#consultation" class="srv-btn-primary open-consultation-btn">
-              <span>Explore Business Automation</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+        <div class="section-header">
+          <div class="section-badge" style="background: rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.4); color: #c084fc;">
+            <span class="pulse-dot" style="background: #a855f7;"></span>
+            AUTOMATED GROWTH ARCHITECTURE
           </div>
-
-          <!-- Flow Pipeline Diagram -->
-          <div class="srv-flow-pipeline">
-            <div class="srv-flow-row">
-              <div class="srv-flow-node">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0081fb"><path d="M16.99 7.02c-1.39 0-2.45.69-3.26 1.7-.81-1.01-1.87-1.7-3.26-1.7C7.87 7.02 6 9.07 6 12s1.87 4.98 4.47 4.98c1.39 0 2.45-.69 3.26-1.7.81 1.01 1.87 1.7 3.26 1.7 2.6 0 4.47-2.05 4.47-4.98s-1.87-4.98-4.47-4.98zm-6.52 7.78c-1.63 0-2.61-1.33-2.61-2.8 0-1.47.98-2.8 2.61-2.8 1.15 0 1.95.73 2.5 1.63-.55.9-1.35 1.63-2.5 1.63zm6.05 0c-1.15 0-1.95-.73-2.5-1.63.55-.9 1.35-1.63 2.5-1.63 1.63 0 2.61 1.33 2.61 2.8 0 1.47-.98 2.8-2.61 2.8z"/></svg>
-                <span>Meta Ads</span>
-              </div>
-              <span class="srv-flow-arrow">→</span>
-              <div class="srv-flow-node">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                <span>Lead Capture</span>
-              </div>
-              <span class="srv-flow-arrow">→</span>
-              <div class="srv-flow-node">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="#25d366"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.37c1.45.78 3.08 1.2 4.74 1.2 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.04 14.69 2 12.04 2z"/></svg>
-                <span>WhatsApp Automation</span>
-              </div>
-            </div>
-
-            <div class="srv-flow-row" style="margin-top: 0.5rem;">
-              <div class="srv-flow-node" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.1);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span style="color: #34d399;">Sales Conversion</span>
-              </div>
-              <span class="srv-flow-arrow" style="transform: rotate(180deg);">→</span>
-              <div class="srv-flow-node">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
-                <span>Follow-up Automation</span>
-              </div>
-              <span class="srv-flow-arrow" style="transform: rotate(180deg);">→</span>
-              <div class="srv-flow-node">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                <span>CRM Assignment</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CRM Dashboard Realistic Interface -->
-        <div class="srv-crm-dashboard">
-          
-          <!-- Sidebar -->
-          <aside class="srv-dash-sidebar">
-            <div class="srv-sidebar-brand">
-              <img src="logo.png" alt="Brandingkit" style="height: 24px;">
-            </div>
-            <ul class="srv-sidebar-menu">
-              <li class="srv-sidebar-item">
-                <span style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-                  Dashboard
-                </span>
-              </li>
-              <li class="srv-sidebar-item active">
-                <span style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-                  Leads
-                </span>
-                <span class="srv-sidebar-badge">3</span>
-              </li>
-              <li class="srv-sidebar-item">
-                <span style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                  WhatsApp
-                </span>
-              </li>
-              <li class="srv-sidebar-item">
-                <span style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                </svg>
-                  Automation
-                </span>
-              </li>
-              <li class="srv-sidebar-item">
-                <span style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                  Contacts
-                </span>
-              </li>
-              <li class="srv-sidebar-item">
-                <span style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                  Reports
-                </span>
-              </li>
-            </ul>
-          </aside>
-
-          <!-- Main Pane -->
-          <div class="srv-dash-main">
-            <div class="srv-dash-main-head">
-              <h3>Lead Management</h3>
-              <div style="font-family: var(--font-mono); font-size: 0.74rem; color: #10b981; display: flex; align-items: center; gap: 6px;">
-                <span class="srv-badge-dot" style="background: #10b981; box-shadow: 0 0 8px #10b981;"></span>
-                <span>Active Sync Engine</span>
-              </div>
-            </div>
-
-            <!-- 4 Metrics Row -->
-            <div class="srv-dash-metrics">
-              <div class="srv-dash-stat-box">
-                <div class="srv-dash-stat-label">New Leads</div>
-                <div class="srv-dash-stat-row">
-                  <div class="srv-dash-stat-num">248</div>
-                  <span class="srv-dash-stat-delta delta-up">↑ 12%</span>
-                </div>
-              </div>
-              <div class="srv-dash-stat-box">
-                <div class="srv-dash-stat-label">Qualified</div>
-                <div class="srv-dash-stat-row">
-                  <div class="srv-dash-stat-num">154</div>
-                  <span class="srv-dash-stat-delta delta-up">↑ 35%</span>
-                </div>
-              </div>
-              <div class="srv-dash-stat-box">
-                <div class="srv-dash-stat-label">Follow-up</div>
-                <div class="srv-dash-stat-row">
-                  <div class="srv-dash-stat-num">62</div>
-                  <span class="srv-dash-stat-delta delta-down">↓ 18%</span>
-                </div>
-              </div>
-              <div class="srv-dash-stat-box">
-                <div class="srv-dash-stat-label">Converted</div>
-                <div class="srv-dash-stat-row">
-                  <div class="srv-dash-stat-num">129</div>
-                  <span class="srv-dash-stat-delta delta-up">↑ 82%</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Leads Table -->
-            <div class="srv-dash-table-wrap">
-              <table class="srv-dash-table">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Source</th>
-                    <th>Status</th>
-                    <th>Assigned</th>
-                    <th>Date</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style="font-weight: 700; color: var(--text-heading);">Rahul Kumar</td>
-                    <td>Meta Ads</td>
-                    <td><span class="srv-crm-badge badge-blue">New Lead</span></td>
-                    <td>Sales Team</td>
-                    <td>10 Oct</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 700; color: var(--text-heading);">Priya Sharma</td>
-                    <td>Google Ads</td>
-                    <td><span class="srv-crm-badge badge-purple">Follow-up</span></td>
-                    <td>Rakesh</td>
-                    <td>10 Oct</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 700; color: var(--text-heading);">Suresh R</td>
-                    <td>Website Form</td>
-                    <td><span class="srv-crm-badge badge-cyan">Qualified</span></td>
-                    <td>Divya</td>
-                    <td>9 Oct</td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 700; color: var(--text-heading);">Meera K</td>
-                    <td>WhatsApp</td>
-                    <td><span class="srv-crm-badge badge-green">Converted</span></td>
-                    <td>Arun</td>
-                    <td>9 Oct</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         4. FROM FIRST CLICK TO CUSTOMER CONVERSION (PROCESS)
-         ========================================================================== -->
-    <section class="srv-process-section" id="process">
-      <div class="container">
-        
-        <div class="srv-section-header">
-          <div class="srv-pill-badge">
-            <span class="srv-badge-dot"></span>
-            OUR PROCESS
-          </div>
-          <h2 class="srv-section-title">
-            From First Click to Customer Conversion
+          <h2 class="section-title">
+            Turn Your Business Into an <span class="text-gradient">Automated Growth Engine</span>
           </h2>
-          <p class="srv-section-desc">
-            A complete and connected system to attract, capture, automate, and convert your customers.
+          <p class="section-desc">
+            Capture every inquiry, automate follow-ups, manage customer relationships, and create a connected system that helps your team work smarter.
           </p>
         </div>
 
-        <div class="srv-process-grid">
+        <!-- Connected Workflow Pipeline Visualization -->
+        <div class="connected-workflow-wrapper">
+          <div class="workflow-pipeline-grid">
+            
+            <!-- Step 1: Ads -->
+            <div class="workflow-node-card">
+              <div class="node-step-tag">
+                <span>STAGE 01</span>
+                <span class="node-timing-badge">0.0s</span>
+              </div>
+              <div class="node-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <h4 class="node-title">Meta &amp; Google Ads</h4>
+              <p class="node-desc">Prospect searches or browses feeds. High-intent creative catches attention.</p>
+              <div class="workflow-arrow-connector" aria-hidden="true">→</div>
+            </div>
+
+            <!-- Step 2: Capture -->
+            <div class="workflow-node-card">
+              <div class="node-step-tag">
+                <span>STAGE 02</span>
+                <span class="node-timing-badge">&lt;3s</span>
+              </div>
+              <div class="node-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="3" y1="9" x2="21" y2="9"/>
+                  <line x1="9" y1="21" x2="9" y2="9"/>
+                </svg>
+              </div>
+              <h4 class="node-title">Lead Capture</h4>
+              <p class="node-desc">Instant forms or landing page captures verified phone, email, and requirements.</p>
+              <div class="workflow-arrow-connector" aria-hidden="true">→</div>
+            </div>
+
+            <!-- Step 3: WhatsApp Automation -->
+            <div class="workflow-node-card">
+              <div class="node-step-tag">
+                <span>STAGE 03</span>
+                <span class="node-timing-badge">&lt;10s</span>
+              </div>
+              <div class="node-icon-box" style="background: rgba(37, 211, 102, 0.15); border-color: rgba(37, 211, 102, 0.4); color: #25d366;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+              </div>
+              <h4 class="node-title">WhatsApp Bot</h4>
+              <p class="node-desc">Official WhatsApp API automatically delivers brochure, pricing &amp; qualifies intent.</p>
+              <div class="workflow-arrow-connector" aria-hidden="true">→</div>
+            </div>
+
+            <!-- Step 4: CRM Assignment -->
+            <div class="workflow-node-card">
+              <div class="node-step-tag">
+                <span>STAGE 04</span>
+                <span class="node-timing-badge">Instant</span>
+              </div>
+              <div class="node-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h4 class="node-title">CRM Assignment</h4>
+              <p class="node-desc">Lead is mapped by territory/product and auto-assigned to sales rep with notification.</p>
+              <div class="workflow-arrow-connector" aria-hidden="true">→</div>
+            </div>
+
+            <!-- Step 5: Follow-up Drip -->
+            <div class="workflow-node-card">
+              <div class="node-step-tag">
+                <span>STAGE 05</span>
+                <span class="node-timing-badge">Cadence</span>
+              </div>
+              <div class="node-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <h4 class="node-title">Auto Follow-up</h4>
+              <p class="node-desc">Drip messages, calendar links, and reminder cadences re-engage warm prospects.</p>
+              <div class="workflow-arrow-connector" aria-hidden="true">→</div>
+            </div>
+
+            <!-- Step 6: Conversion -->
+            <div class="workflow-node-card" style="border-color: rgba(16, 185, 129, 0.4);">
+              <div class="node-step-tag" style="color: #34d399;">
+                <span>STAGE 06</span>
+                <span class="node-timing-badge" style="color: #10b981;">Deal Closed</span>
+              </div>
+              <div class="node-icon-box" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.4); color: #34d399;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <h4 class="node-title">Sales Conversion</h4>
+              <p class="node-desc">Consultation booked, deal converted, and customer recorded in pipeline analytics.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Sample CRM Dashboard Component -->
+        <div class="showcase-crm-dashboard">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.75rem;">
+            <div>
+              <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-heading); margin-bottom: 0.2rem;">
+                Sample Live CRM Control Center
+              </h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">
+                Illustrative growth dashboard architecture configured by Brandingkit automation architects.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+              <span class="dash-live-badge">
+                <span class="live-dot"></span>
+                <span>SYNC STREAM LIVE</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- 4 Core Counters -->
+          <div class="showcase-stats-row">
+            <div class="showcase-stat-box">
+              <div class="showcase-stat-num">1,840</div>
+              <div class="showcase-stat-label">New Inbound Leads</div>
+              <div class="showcase-stat-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+                +34% Month over Month
+              </div>
+            </div>
+
+            <div class="showcase-stat-box">
+              <div class="showcase-stat-num">1,120</div>
+              <div class="showcase-stat-label">Qualified Leads (MQL)</div>
+              <div class="showcase-stat-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+                60.8% Qualification Rate
+              </div>
+            </div>
+
+            <div class="showcase-stat-box">
+              <div class="showcase-stat-num" style="color: #f59e0b;">18</div>
+              <div class="showcase-stat-label">Follow-ups Pending</div>
+              <div class="showcase-stat-badge" style="color: #f59e0b;">
+                ⚡ Auto-Reminders Active
+              </div>
+            </div>
+
+            <div class="showcase-stat-box" style="border-color: rgba(16, 185, 129, 0.4);">
+              <div class="showcase-stat-num" style="color: #10b981;">418</div>
+              <div class="showcase-stat-label">Converted Customers</div>
+              <div class="showcase-stat-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+                22.7% Close Ratio
+              </div>
+            </div>
+          </div>
+
+          <!-- Lead Source Tracking Bar & Live Stream -->
+          <div style="background: var(--mini-stat-bg); border: 1px solid var(--bg-card-border); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 2rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 0.75rem; color: var(--text-muted);">
+              <span>LEAD SOURCE DISTRIBUTION</span>
+              <span>Meta (42%) • Google Search (36%) • SEO Organic (15%) • WhatsApp (7%)</span>
+            </div>
+            <div style="height: 10px; width: 100%; display: flex; border-radius: 5px; overflow: hidden; background: rgba(255,255,255,0.05);">
+              <div style="width: 42%; background: #3b82f6;" title="Meta Ads (42%)"></div>
+              <div style="width: 36%; background: #8b5cf6;" title="Google Search (36%)"></div>
+              <div style="width: 15%; background: #10b981;" title="SEO Organic (15%)"></div>
+              <div style="width: 7%; background: #06b6d4;" title="WhatsApp Direct (7%)"></div>
+            </div>
+          </div>
+
+          <!-- Highlight Relevant Capabilities -->
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-heading); margin-bottom: 1.2rem;">
+            Engineered Capabilities Included in Every Brandingkit Stack:
+          </h4>
+          <div class="showcase-capabilities-grid">
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <div class="cap-title">CRM &amp; Lead Management</div>
+                <div class="cap-desc">Centralized lead repository with stage tracking, custom tagging, and status timelines.</div>
+              </div>
+            </div>
+
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <div class="cap-title">Official WhatsApp Platform</div>
+                <div class="cap-desc">Meta Cloud API integration with verified green tick support and rich interactive buttons.</div>
+              </div>
+            </div>
+
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <div class="cap-title">Automated Chatbot Workflows</div>
+                <div class="cap-desc">24/7 conversational qualification, brochure delivery, and appointment scheduling.</div>
+              </div>
+            </div>
+
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <div class="cap-title">Lead Distribution &amp; Follow-ups</div>
+                <div class="cap-desc">Round-robin agent routing, SLA reminders, and automated nurture sequences.</div>
+              </div>
+            </div>
+
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <div class="cap-title">Reporting &amp; Revenue Analytics</div>
+                <div class="cap-desc">Transparent CPL, CAC, and pipeline conversion tracking accessible anywhere.</div>
+              </div>
+            </div>
+
+            <div class="capability-item">
+              <span class="cap-check">✓</span>
+              <div>
+                <div class="cap-title">Google Sheets &amp; 3rd-Party APIs</div>
+                <div class="cap-desc">Real-time sync to Sheets, Zoho, LeadSquared, HubSpot, Webhooks, and ERPs.</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="#consultation" class="btn btn-primary open-consultation-btn" data-service="Business Automation">
+              <span>Explore Business Automation</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <p style="font-size: 0.74rem; color: var(--text-subtle); text-align: center; margin-top: 1.25rem;">
+            *Note: Illustrative dashboard showing automated workflow architecture. Actual results and metrics configured to client CRM specifications.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: OUR INTEGRATED GROWTH PROCESS (4 Connected Steps)
+         ========================================================================== -->
+    <section class="growth-process-section" id="growth-process">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
+            PROVEN METHODOLOGY
+          </div>
+          <h2 class="section-title">
+            From First Click to <span class="text-gradient">Customer Conversion</span>
+          </h2>
+          <p class="section-desc">
+            A cohesive 4-step framework that connects marketing acquisition with automated customer operations.
+          </p>
+        </div>
+
+        <div class="process-grid-4">
           
-          <div class="srv-process-card">
-            <div class="srv-process-icon-ring">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <circle cx="12" cy="12" r="6"/>
-                <circle cx="12" cy="12" r="2"/>
-              </svg>
-            </div>
-            <span class="srv-process-step-num">01</span>
-            <h3 class="srv-process-title">Attract</h3>
-            <p class="srv-process-desc">
-              Reach potential customers through SEO, Google Ads, Meta Ads, and social media.
+          <!-- Step 01 -->
+          <div class="process-card-item">
+            <div class="process-step-num">01</div>
+            <h3 class="process-step-title">Attract</h3>
+            <p class="process-step-desc">
+              Reach potential customers through targeted SEO, high-intent Google Search Ads, engaging Meta Ads, and organic social media content.
             </p>
           </div>
 
-          <div class="srv-process-card">
-            <div class="srv-process-icon-ring">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
-              </svg>
-            </div>
-            <span class="srv-process-step-num">02</span>
-            <h3 class="srv-process-title">Capture</h3>
-            <p class="srv-process-desc">
-              Convert visitors into inquiries through landing pages, forms, and WhatsApp.
+          <!-- Step 02 -->
+          <div class="process-card-item">
+            <div class="process-step-num">02</div>
+            <h3 class="process-step-title">Capture</h3>
+            <p class="process-step-desc">
+              Convert interested visitors into qualified inquiries through high-converting landing pages, friction-free forms, and instant WhatsApp chat funnels.
             </p>
           </div>
 
-          <div class="srv-process-card">
-            <div class="srv-process-icon-ring">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"/>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-              </svg>
-            </div>
-            <span class="srv-process-step-num">03</span>
-            <h3 class="srv-process-title">Automate</h3>
-            <p class="srv-process-desc">
-              Organize leads, assign sales reps in CRM, and trigger timely follow-ups.
+          <!-- Step 03 -->
+          <div class="process-card-item">
+            <div class="process-step-num">03</div>
+            <h3 class="process-step-title">Automate</h3>
+            <p class="process-step-desc">
+              Organize leads, assign sales opportunities, and trigger timely customer follow-ups using CRM integration and smart WhatsApp automation workflows.
             </p>
           </div>
 
-          <div class="srv-process-card">
-            <div class="srv-process-icon-ring">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Step 04 -->
+          <div class="process-card-item">
+            <div class="process-step-num">04</div>
+            <h3 class="process-step-title">Convert &amp; Optimize</h3>
+            <p class="process-step-desc">
+              Track campaign performance, understand the complete customer journey, close deals faster, and continuously improve marketing ROI.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: WHY CHOOSE BRANDINGKIT? (6 Core Benefits)
+         ========================================================================== -->
+    <section class="why-services-section" id="why-choose">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
+            THE BRANDINGKIT ADVANTAGE
+          </div>
+          <h2 class="section-title">
+            One Partner. <span class="text-gradient">Your Entire Digital Growth Team.</span>
+          </h2>
+          <p class="section-desc">
+            Why forward-thinking enterprises and ambitious founders trust Brandingkit to scale revenue.
+          </p>
+        </div>
+
+        <div class="why-benefits-grid">
+          
+          <!-- Benefit 1 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="why-benefit-title">All-in-One Expertise</h3>
+            <p class="why-benefit-desc">
+              Marketing, web development, creative production, and automation under one roof. No fragmented vendors, no misaligned communication.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="18" y1="20" x2="18" y2="10"/>
                 <line x1="12" y1="20" x2="12" y2="4"/>
                 <line x1="6" y1="20" x2="6" y2="14"/>
               </svg>
             </div>
-            <span class="srv-process-step-num">04</span>
-            <h3 class="srv-process-title">Convert &amp; Optimize</h3>
-            <p class="srv-process-desc">
-              Track performance and continuously improve marketing efficiency.
+            <h3 class="why-benefit-title">Data-Driven Marketing</h3>
+            <p class="why-benefit-desc">
+              We eliminate guesswork. Campaign analytics, conversion tracking, and real cost-per-lead data guide every optimization decision.
+            </p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="why-benefit-title">Connected Workflows</h3>
+            <p class="why-benefit-desc">
+              Integrate advertising, lead capture, CRM distribution, and WhatsApp communication into one connected pipeline with zero lead leakage.
+            </p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v8"/>
+                <path d="M8 12h8"/>
+              </svg>
+            </div>
+            <h3 class="why-benefit-title">Customized Strategies</h3>
+            <p class="why-benefit-desc">
+              We align every campaign and workflow with your business model, customer lifetime value, market geography, and growth goals.
+            </p>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <h3 class="why-benefit-title">Transparent Reporting</h3>
+            <p class="why-benefit-desc">
+              Complete visibility into ad spend, actual conversions, cost per acquisition, and agreed performance metrics with zero fluff.
+            </p>
+          </div>
+
+          <!-- Benefit 6 -->
+          <div class="why-benefit-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h3 class="why-benefit-title">Dedicated Support</h3>
+            <p class="why-benefit-desc">
+              Work with a responsive team in Padur, Chennai dedicated to your account with rapid turnaround times and proactive strategy reviews.
             </p>
           </div>
 
@@ -1099,81 +1744,156 @@
     </section>
 
     <!-- ==========================================================================
-         5. WHY CHOOSE BRANDINGKIT
+         SECTION 8: INDUSTRY SOLUTIONS (Tailored Service Combinations)
          ========================================================================== -->
-    <section class="srv-why-section" id="why-choose">
+    <section class="industry-solutions-section" id="industries">
       <div class="container">
         
-        <div class="srv-section-header">
-          <div class="srv-pill-badge">
-            <span class="srv-badge-dot"></span>
-            WHY CHOOSE BRANDINGKIT
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
+            SECTOR EXPERTISE
           </div>
-          <h2 class="srv-section-title">
-            One Partner. Your Entire Digital Growth Team.
+          <h2 class="section-title">
+            Digital Growth Solutions for <span class="text-gradient">Every Business</span>
           </h2>
+          <p class="section-desc">
+            Strategic combinations of advertising, web development, and automation engineered for the unique customer journeys of your industry.
+          </p>
         </div>
 
-        <div class="srv-why-grid">
+        <div class="industry-cards-grid">
           
-          <div class="srv-why-card">
-            <div class="srv-why-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          <!-- Industry 1: Healthcare & Hospitals -->
+          <div class="industry-card">
+            <div class="industry-card-top">
+              <div class="industry-badge">Healthcare &amp; Clinics</div>
+              <h3 class="industry-title">Healthcare &amp; Hospitals</h3>
+              <p class="industry-desc">
+                Attract high-intent patients searching for treatments and eliminate no-shows with automated WhatsApp appointment booking and reminder workflows.
+              </p>
+              <div class="industry-stack-label">Recommended Growth Stack:</div>
+              <div class="industry-chips-wrap">
+                <span class="industry-chip">Local SEO</span>
+                <span class="industry-chip">Google Search Ads</span>
+                <span class="industry-chip">WhatsApp Bot</span>
+                <span class="industry-chip">Patient CRM</span>
+              </div>
             </div>
-            <h3 class="srv-why-title">All-in-One Expertise</h3>
-            <p class="srv-why-desc">
-              Marketing, web development, creative production, and automation under one roof.
-            </p>
+            <a href="#consultation" class="industry-card-action open-consultation-btn" data-service="Business Automation">
+              <span>Consult for Healthcare</span>
+              <span>→</span>
+            </a>
           </div>
 
-          <div class="srv-why-card">
-            <div class="srv-why-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <!-- Industry 2: Real Estate & Property Developers -->
+          <div class="industry-card">
+            <div class="industry-card-top">
+              <div class="industry-badge">Real Estate</div>
+              <h3 class="industry-title">Real Estate &amp; Property Developers</h3>
+              <p class="industry-desc">
+                Generate verified home buyer inquiries via Meta and Google ads, with instant WhatsApp brochure distribution and automated site-visit routing.
+              </p>
+              <div class="industry-stack-label">Recommended Growth Stack:</div>
+              <div class="industry-chips-wrap">
+                <span class="industry-chip">Meta Lead Ads</span>
+                <span class="industry-chip">Project Landing Page</span>
+                <span class="industry-chip">Brochure Bot</span>
+                <span class="industry-chip">LeadSquared / CRM</span>
+              </div>
             </div>
-            <h3 class="srv-why-title">Data-Driven Marketing</h3>
-            <p class="srv-why-desc">
-              Use campaign analytics and conversion metrics to guide decisions.
-            </p>
+            <a href="#consultation" class="industry-card-action open-consultation-btn" data-service="Lead Generation">
+              <span>Consult for Real Estate</span>
+              <span>→</span>
+            </a>
           </div>
 
-          <div class="srv-why-card">
-            <div class="srv-why-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          <!-- Industry 3: E-commerce & D2C Brands -->
+          <div class="industry-card">
+            <div class="industry-card-top">
+              <div class="industry-badge">E-Commerce</div>
+              <h3 class="industry-title">E-commerce &amp; D2C Brands</h3>
+              <p class="industry-desc">
+                Scale revenue with high-ROAS Performance Max and catalog campaigns, automated abandoned cart recovery over WhatsApp, and conversion optimization.
+              </p>
+              <div class="industry-stack-label">Recommended Growth Stack:</div>
+              <div class="industry-chips-wrap">
+                <span class="industry-chip">Performance Max</span>
+                <span class="industry-chip">Meta Catalogues</span>
+                <span class="industry-chip">Cart Recovery Bot</span>
+                <span class="industry-chip">CRO Store</span>
+              </div>
             </div>
-            <h3 class="srv-why-title">Connected Workflows</h3>
-            <p class="srv-why-desc">
-              Integrate advertising, lead management, and customer follow-ups.
-            </p>
+            <a href="#consultation" class="industry-card-action open-consultation-btn" data-service="Meta Ads">
+              <span>Consult for E-Commerce</span>
+              <span>→</span>
+            </a>
           </div>
 
-          <div class="srv-why-card">
-            <div class="srv-why-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+          <!-- Industry 4: Education & Coaching Institutes -->
+          <div class="industry-card">
+            <div class="industry-card-top">
+              <div class="industry-badge">Education &amp; EdTech</div>
+              <h3 class="industry-title">Education &amp; Coaching Institutes</h3>
+              <p class="industry-desc">
+                Fill classroom batches and webinar seats with qualified student leads, instant syllabus delivery on WhatsApp, and automated counselor follow-ups.
+              </p>
+              <div class="industry-stack-label">Recommended Growth Stack:</div>
+              <div class="industry-chips-wrap">
+                <span class="industry-chip">Admission Funnels</span>
+                <span class="industry-chip">Webinar Ads</span>
+                <span class="industry-chip">Counseling Bot</span>
+                <span class="industry-chip">Student CRM</span>
+              </div>
             </div>
-            <h3 class="srv-why-title">Customized Strategies</h3>
-            <p class="srv-why-desc">
-              Align services with your business goals, audience, and budget.
-            </p>
+            <a href="#consultation" class="industry-card-action open-consultation-btn" data-service="Lead Generation">
+              <span>Consult for Education</span>
+              <span>→</span>
+            </a>
           </div>
 
-          <div class="srv-why-card">
-            <div class="srv-why-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <!-- Industry 5: Local Businesses & Clinics -->
+          <div class="industry-card">
+            <div class="industry-card-top">
+              <div class="industry-badge">Local Retail &amp; Services</div>
+              <h3 class="industry-title">Local Businesses &amp; Clinics</h3>
+              <p class="industry-desc">
+                Dominate your neighborhood with Google Business Profile optimization, local 3-pack map rankings, hyper-local PPC, and automated 5-star review collection.
+              </p>
+              <div class="industry-stack-label">Recommended Growth Stack:</div>
+              <div class="industry-chips-wrap">
+                <span class="industry-chip">Google Maps SEO</span>
+                <span class="industry-chip">Call Ads</span>
+                <span class="industry-chip">Review Bot</span>
+                <span class="industry-chip">Local Web</span>
+              </div>
             </div>
-            <h3 class="srv-why-title">Transparent Reporting</h3>
-            <p class="srv-why-desc">
-              Provide clear visibility into campaign activity and results.
-            </p>
+            <a href="#consultation" class="industry-card-action open-consultation-btn" data-service="SEO">
+              <span>Consult for Local Business</span>
+              <span>→</span>
+            </a>
           </div>
 
-          <div class="srv-why-card">
-            <div class="srv-why-icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          <!-- Industry 6: B2B & Professional Services -->
+          <div class="industry-card">
+            <div class="industry-card-top">
+              <div class="industry-badge">B2B &amp; Corporate</div>
+              <h3 class="industry-title">B2B &amp; Professional Services</h3>
+              <p class="industry-desc">
+                Attract enterprise decision-makers through thought leadership on LinkedIn, high-converting demo pages, and multi-touch email/WhatsApp nurturing.
+              </p>
+              <div class="industry-stack-label">Recommended Growth Stack:</div>
+              <div class="industry-chips-wrap">
+                <span class="industry-chip">LinkedIn Ads</span>
+                <span class="industry-chip">Demo Landing Page</span>
+                <span class="industry-chip">Sales Pipeline CRM</span>
+                <span class="industry-chip">Drip Cadence</span>
+              </div>
             </div>
-            <h3 class="srv-why-title">Dedicated Support</h3>
-            <p class="srv-why-desc">
-              Work with a team focused on your business requirements.
-            </p>
+            <a href="#consultation" class="industry-card-action open-consultation-btn" data-service="Business Automation">
+              <span>Consult for B2B</span>
+              <span>→</span>
+            </a>
           </div>
 
         </div>
@@ -1182,302 +1902,478 @@
     </section>
 
     <!-- ==========================================================================
-         6. DIGITAL GROWTH SOLUTIONS FOR EVERY BUSINESS (INDUSTRY SOLUTIONS)
+         SECTION 9: PORTFOLIO & CASE STUDIES (Selected Strategy Blueprints)
          ========================================================================== -->
-    <section class="srv-industry-section" id="industries">
+    <section class="portfolio-services-section" id="case-studies">
       <div class="container">
         
-        <div class="srv-section-header">
-          <div class="srv-pill-badge">
-            <span class="srv-badge-dot"></span>
-            INDUSTRY SOLUTIONS
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
+            PROVEN WORKFLOWS
           </div>
-          <h2 class="srv-section-title">
-            Digital Growth Solutions for Every Business
+          <h2 class="section-title">
+            Strategy That Connects Marketing With <span class="text-gradient">Business Growth</span>
           </h2>
+          <p class="section-desc">
+            Selected workflows and verified growth systems deployed for ambitious brands in Chennai and nationwide.
+          </p>
         </div>
 
-        <div class="srv-industry-grid">
+        <div class="portfolio-cards-grid">
           
-          <div class="srv-industry-card">
-            <img src="assets/ind-healthcare.jpg" alt="Healthcare &amp; Hospitals" class="srv-industry-bg">
-            <div class="srv-industry-overlay"></div>
-            <div class="srv-industry-content">
-              <h3 class="srv-industry-title">Healthcare &amp; Hospitals</h3>
-              <p class="srv-industry-desc">Local SEO, lead generation and patient engagement.</p>
-            </div>
-          </div>
-
-          <div class="srv-industry-card">
-            <img src="assets/ind-realestate.jpg" alt="Real Estate &amp; Property Developers" class="srv-industry-bg">
-            <div class="srv-industry-overlay"></div>
-            <div class="srv-industry-content">
-              <h3 class="srv-industry-title">Real Estate &amp; Property Developers</h3>
-              <p class="srv-industry-desc">Meta ads, lead funnels and CRM follow-ups.</p>
-            </div>
-          </div>
-
-          <div class="srv-industry-card">
-            <img src="assets/ind-ecommerce.jpg" alt="E-commerce &amp; D2C Brands" class="srv-industry-bg">
-            <div class="srv-industry-overlay"></div>
-            <div class="srv-industry-content">
-              <h3 class="srv-industry-title">E-commerce &amp; D2C Brands</h3>
-              <p class="srv-industry-desc">Performance marketing and online sales growth.</p>
-            </div>
-          </div>
-
-          <div class="srv-industry-card">
-            <img src="assets/ind-education.jpg" alt="Education &amp; Coaching Institutes" class="srv-industry-bg">
-            <div class="srv-industry-overlay"></div>
-            <div class="srv-industry-content">
-              <h3 class="srv-industry-title">Education &amp; Coaching Institutes</h3>
-              <p class="srv-industry-desc">Lead generation and admissions marketing.</p>
-            </div>
-          </div>
-
-          <div class="srv-industry-card">
-            <img src="assets/ind-localclinic.jpg" alt="Local Businesses &amp; Clinics" class="srv-industry-bg">
-            <div class="srv-industry-overlay"></div>
-            <div class="srv-industry-content">
-              <h3 class="srv-industry-title">Local Businesses &amp; Clinics</h3>
-              <p class="srv-industry-desc">Clinic awareness, consultation bookings &amp; local reputation.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         7. READY TO GROW YOUR BUSINESS SMARTER? (CONSULTATION & INQUIRY FORM)
-         ========================================================================== -->
-    <section class="srv-cta-section" id="consultation">
-      <div class="container">
-        <div class="srv-cta-grid">
-          
-          <div class="srv-cta-left">
-            <h2>Ready to Grow Your Business Smarter?</h2>
-            <p>
-              Tell us about your business goals. We will help you identify the right combination of digital marketing, technology, and automation services.
-            </p>
-            <div class="srv-cta-actions">
-              <a href="#consultationFormCard" class="srv-btn-primary">
-                <span>Get Free Consultation</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-              <a href="https://wa.me/917904053790?text=Hi%20Brandingkit%2C%20I%20would%20like%20to%20consult%20about%20digital%20growth%20and%20business%20automation." class="srv-btn-wa-direct" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.37c1.45.78 3.08 1.2 4.74 1.2 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.04 14.69 2 12.04 2z"/></svg>
-                <span>Chat on WhatsApp</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="srv-form-card" id="consultationFormCard">
-            <form class="srv-lead-form" id="servicesInquiryForm">
+          <!-- Project 01 -->
+          <article class="portfolio-card-item">
+            <div>
+              <div class="portfolio-card-head">
+                <span class="portfolio-industry-tag">Real Estate &amp; Construction</span>
+                <span style="font-size: 0.75rem; color: var(--text-subtle); font-family: var(--font-mono);">Chennai OMR Corridor</span>
+              </div>
+              <h3 class="portfolio-client-name">Premium Residential Villa Community</h3>
               
-              <div class="srv-form-row">
-                <div class="srv-form-field">
-                  <label class="srv-form-label" for="serviceFullName">Full Name *</label>
-                  <input type="text" id="serviceFullName" class="srv-form-input" placeholder="Your name" required autocomplete="name">
-                </div>
-                <div class="srv-form-field">
-                  <label class="srv-form-label" for="serviceBusinessName">Business Name *</label>
-                  <input type="text" id="serviceBusinessName" class="srv-form-input" placeholder="Your Business Name" required autocomplete="organization">
-                </div>
+              <div class="portfolio-services-tags">
+                <span class="p-tag">Meta Lead Ads</span>
+                <span class="p-tag">Instant WhatsApp Brochure Bot</span>
+                <span class="p-tag">Automated CRM Routing</span>
               </div>
 
-              <div class="srv-form-row">
-                <div class="srv-form-field">
-                  <label class="srv-form-label" for="servicePhone">Phone Number *</label>
-                  <input type="tel" id="servicePhone" class="srv-form-input" placeholder="+91 Enter your number" required autocomplete="tel">
-                </div>
-                <div class="srv-form-field">
-                  <label class="srv-form-label" for="serviceEmail">Email Address *</label>
-                  <input type="email" id="serviceEmail" class="srv-form-input" placeholder="Enter your business email" required autocomplete="email">
-                </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+                Deployed hyper-targeted Meta advertising paired with an official WhatsApp bot that delivered floor plans instantly and scheduled site visits in real time.
+              </p>
+
+              <div class="portfolio-results-box">
+                <div class="portfolio-results-title">Verified Workflow Outcomes:</div>
+                <div class="portfolio-results-metric">4.2x ROAS • 2,800+ Verified Inquiries • 78% Faster Response</div>
+              </div>
+            </div>
+
+            <a href="#consultation" class="btn btn-outline btn-sm open-consultation-btn" data-service="Lead Generation">
+              <span>Explore Real Estate Strategy</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="portfolio-card-item">
+            <div>
+              <div class="portfolio-card-head">
+                <span class="portfolio-industry-tag">Healthcare &amp; Diagnostics</span>
+                <span style="font-size: 0.75rem; color: var(--text-subtle); font-family: var(--font-mono);">Chennai &amp; Suburbs</span>
+              </div>
+              <h3 class="portfolio-client-name">Multi-Speciality Healthcare Clinic</h3>
+              
+              <div class="portfolio-services-tags">
+                <span class="p-tag">Local SEO</span>
+                <span class="p-tag">Google Search PPC</span>
+                <span class="p-tag">WhatsApp Appointment Bot</span>
               </div>
 
-              <div class="srv-form-row">
-                <div class="srv-form-field">
-                  <label class="srv-form-label" for="serviceInterested">Select Service Interested In</label>
-                  <select id="serviceInterested" class="srv-form-select">
-                    <option value="" disabled selected>Select a service</option>
-                    <option value="Business Automation">Business Automation</option>
-                    <option value="Lead Generation">Lead Generation</option>
-                    <option value="SEO">Search Engine Optimization</option>
-                    <option value="Website Development">Website Development</option>
-                    <option value="Meta Ads">Meta Ads</option>
-                    <option value="Google Ads">Google Ads</option>
-                    <option value="Social Media Marketing">Social Media Marketing</option>
-                    <option value="Creative Design &amp; Video">Creative Design &amp; Video</option>
-                    <option value="All-in-One Growth Stack">Complete Growth Package</option>
-                  </select>
-                </div>
-                <div class="srv-form-field">
-                  <label class="srv-form-label" for="serviceBudget">Monthly Marketing Budget</label>
-                  <select id="serviceBudget" class="srv-form-select">
-                    <option value="" disabled selected>Select Budget (Optional)</option>
-                    <option value="₹25k - ₹50k">₹25,000 – ₹50,000 / mo</option>
-                    <option value="₹50k - ₹1.5L">₹50,000 – ₹1,50,000 / mo</option>
-                    <option value="₹1.5L - ₹5L">₹1,50,000 – ₹5,00,000 / mo</option>
-                    <option value="₹5L+">₹5,00,000+ / mo</option>
-                  </select>
-                </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+                Combined local 3-pack Google Maps optimization with high-intent search campaigns and an interactive WhatsApp bot for patient bookings.
+              </p>
+
+              <div class="portfolio-results-box">
+                <div class="portfolio-results-title">Verified Workflow Outcomes:</div>
+                <div class="portfolio-results-metric">+180% Patient Inquiries • #1 Local Rank for 40+ Keywords • 92% Show-Up Rate</div>
+              </div>
+            </div>
+
+            <a href="#consultation" class="btn btn-outline btn-sm open-consultation-btn" data-service="SEO">
+              <span>Explore Healthcare Strategy</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="portfolio-card-item">
+            <div>
+              <div class="portfolio-card-head">
+                <span class="portfolio-industry-tag">D2C E-commerce</span>
+                <span style="font-size: 0.75rem; color: var(--text-subtle); font-family: var(--font-mono);">Pan-India Retail</span>
+              </div>
+              <h3 class="portfolio-client-name">D2C Sustainable Lifestyle Brand</h3>
+              
+              <div class="portfolio-services-tags">
+                <span class="p-tag">Meta Catalogue Ads</span>
+                <span class="p-tag">Performance Max</span>
+                <span class="p-tag">WhatsApp Cart Recovery</span>
               </div>
 
-              <div class="srv-form-field">
-                <label class="srv-form-label" for="serviceGoals">Tell us about Your Goals</label>
-                <textarea id="serviceGoals" class="srv-form-textarea" rows="3" placeholder="Type your message here..."></textarea>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+                Integrated dynamic product ads with an automated WhatsApp abandoned cart recovery flow offering timed incentives and one-click checkout.
+              </p>
+
+              <div class="portfolio-results-box">
+                <div class="portfolio-results-title">Verified Workflow Outcomes:</div>
+                <div class="portfolio-results-metric">3.8x Blended ROAS • 28.4% Cart Recovery Rate • 40% Repeat Purchases</div>
+              </div>
+            </div>
+
+            <a href="#consultation" class="btn btn-outline btn-sm open-consultation-btn" data-service="Meta Ads">
+              <span>Explore E-Commerce Strategy</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="portfolio-card-item">
+            <div>
+              <div class="portfolio-card-head">
+                <span class="portfolio-industry-tag">B2B &amp; Industrial</span>
+                <span style="font-size: 0.75rem; color: var(--text-subtle); font-family: var(--font-mono);">Industrial Corridor</span>
+              </div>
+              <h3 class="portfolio-client-name">Precision Engineering Tech Enterprise</h3>
+              
+              <div class="portfolio-services-tags">
+                <span class="p-tag">Technical SEO</span>
+                <span class="p-tag">Custom Landing Pages</span>
+                <span class="p-tag">CRM Pipeline Automation</span>
               </div>
 
-              <button type="submit" class="srv-form-submit-btn">
-                <span>Request My Consultation</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+                Revamped corporate website architecture with high-converting specification landing pages and automated lead capture routing to HubSpot.
+              </p>
 
-            </form>
-          </div>
+              <div class="portfolio-results-box">
+                <div class="portfolio-results-title">Verified Workflow Outcomes:</div>
+                <div class="portfolio-results-metric">240% Inbound Lead Growth • Zero Manual Data Entry • High-Value RFP Pipeline</div>
+              </div>
+            </div>
+
+            <a href="#consultation" class="btn btn-outline btn-sm open-consultation-btn" data-service="Business Automation">
+              <span>Explore B2B Strategy</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </article>
 
         </div>
+
+        <p style="font-size: 0.74rem; color: var(--text-subtle); text-align: center; margin-top: 2rem;">
+          *Note: Selected workflows represent actual Brandingkit system blueprints. Specific client figures respect ongoing NDA confidentiality agreements.
+        </p>
+
       </div>
     </section>
 
     <!-- ==========================================================================
-         SECTION 10: FREQUENTLY ASKED QUESTIONS (2-COLUMN ACCORDION)
+         SECTION 10: FREQUENTLY ASKED QUESTIONS (Accessible Native Accordion)
          ========================================================================== -->
-    <section class="srv-faq-section" id="faq">
+    <section class="services-faq-section" id="faq">
       <div class="container">
         
-        <div class="srv-section-header">
-          <div class="srv-pill-badge">
-            <span class="srv-badge-dot"></span>
-            FREQUENTLY ASKED QUESTIONS
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="pulse-dot"></span>
+            COMMON INQUIRIES
           </div>
-          <h2 class="srv-section-title">
-            Got Questions? We've Got Answers.
+          <h2 class="section-title">
+            Frequently Asked <span class="text-gradient">Questions</span>
           </h2>
+          <p class="section-desc">
+            Everything you need to know about partnering with Brandingkit for digital marketing, technology, and business automation.
+          </p>
         </div>
 
-        <div class="srv-faq-grid">
+        <div class="faq-accordion-group">
           
-          <!-- Column 1 (5 FAQs) -->
-          <div class="srv-faq-col">
+          <!-- FAQ 1 -->
+          <details class="faq-details-item" name="services-faq" open>
+            <summary class="faq-summary-btn">
+              <span>What digital marketing services does Brandingkit provide?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                Brandingkit provides an end-to-end digital growth suite comprising <a href="#service-automation">Business Automation</a> (CRM, AI, WhatsApp workflows), <a href="#service-leadgen">Lead Generation Funnels</a>, <a href="#service-seo">Search Engine Optimization (SEO &amp; GEO)</a>, <a href="#service-webdev">Website Development</a>, <a href="#service-meta-ads">Meta Ads</a>, <a href="#service-google-ads">Google Ads</a>, <a href="#service-smm">Social Media Marketing</a>, and <a href="#service-creative">Creative Design &amp; Video Editing</a>.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="faq-details-item" name="services-faq">
+            <summary class="faq-summary-btn">
+              <span>Can Brandingkit manage all our marketing activities?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                Yes. We act as your complete outsourced digital growth department. We handle high-level growth strategy, ad creative production, media buying on Google and Meta, landing page design, CRM pipeline setup, automated follow-up sequences, and weekly performance reviews so your leadership team can focus on core operations.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="faq-details-item" name="services-faq">
+            <summary class="faq-summary-btn">
+              <span>How does your lead generation process work?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                Our lead generation framework focuses on intent, not vanity metrics. We deploy hyper-targeted ads on Meta and Google driving traffic to high-converting landing pages. Once an inquiry is captured, our automated system triggers an instant WhatsApp message to the prospect and dispatches the lead into your CRM with sales rep notifications within seconds.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="faq-details-item" name="services-faq">
+            <summary class="faq-summary-btn">
+              <span>What is the difference between SEO and Google Ads?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                Google Ads is a pay-per-click channel that places your business at the top of search results immediately, providing instant qualified traffic for active buyers. SEO (Search Engine Optimization) is a medium-to-long-term asset that builds organic authority, ranking your website continuously without paying for each click. We usually recommend a blended approach for search market dominance.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 5 -->
+          <details class="faq-details-item" name="services-faq">
+            <summary class="faq-summary-btn">
+              <span>Can you integrate CRM with WhatsApp Business?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                Yes. We specialize in official WhatsApp Business Platform (API) integrations. We connect WhatsApp with popular CRMs like Zoho, LeadSquared, HubSpot, Salesforce, Pipedrive, and Google Sheets to enable automatic brochure delivery, appointment bookings, catalog sharing, and two-way conversational tracking.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 6 -->
+          <details class="faq-details-item" name="services-faq">
+            <summary class="faq-summary-btn">
+              <span>Do you develop websites for small businesses?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                Yes. We design and build modern, fast, mobile-first websites tailored for startups, clinics, local service businesses, and expanding enterprises. Our websites are built with conversion-focused UX, clean semantic code, and technical SEO foundations so you rank and convert from day one.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 7 -->
+          <details class="faq-details-item" name="services-faq">
+            <summary class="faq-summary-btn">
+              <span>Can I choose individual services or a complete package?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                You have complete flexibility. You can engage Brandingkit for standalone requirements — such as a custom website build, an SEO campaign, or Meta Ads management — or select our integrated Digital Growth &amp; Automation Stack for connected end-to-end execution.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 8 -->
+          <details class="faq-details-item" name="services-faq">
+            <summary class="faq-summary-btn">
+              <span>How do you measure campaign performance?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                We report on real commercial metrics: Cost Per Qualified Lead (CPL), Customer Acquisition Cost (CAC), Return on Ad Spend (ROAS), Lead-to-Sale Conversion Rate, and total pipeline revenue generated. You receive clear weekly summaries and live dashboard access.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 9 -->
+          <details class="faq-details-item" name="services-faq">
+            <summary class="faq-summary-btn">
+              <span>Do you work with businesses outside Chennai?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                Yes! While our headquarters is located in Padur, Chennai, we actively work with businesses across Bangalore, Mumbai, Delhi, Hyderabad, as well as international clients in Dubai, Singapore, and the United States via seamless video consultations and cloud collaboration tools.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 10 -->
+          <details class="faq-details-item" name="services-faq">
+            <summary class="faq-summary-btn">
+              <span>How can I request a consultation?</span>
+              <svg class="faq-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer-panel">
+              <p>
+                You can fill out the consultation form below, click the floating WhatsApp button to chat directly, or call our office at <a href="tel:+917904053790">+91 79040 53790</a>. We will review your current business model and provide an actionable growth blueprint within 24 hours.
+              </p>
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 11: HIGH-CONVERSION CTA SECTION (Luminous Gradient + Compact Form)
+         ========================================================================== -->
+    <section class="services-conversion-cta" id="consultation">
+      <div class="container">
+        
+        <div class="conversion-cta-card">
+          <div class="cta-inner-grid">
             
-            <details class="srv-faq-item" name="srv-faq" open>
-              <summary class="srv-faq-summary">
-                <span>What digital marketing services does Brandingkit provide?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                Brandingkit provides an end-to-end digital growth suite comprising Business Automation (CRM, AI, WhatsApp), Paid Advertising (Meta Ads, Google Ads), Search Engine Optimization (Technical, Local, AEO/GEO), Website &amp; Landing Page Development, Social Media Marketing, and Creative Ad Production.
+            <!-- Left Info Column -->
+            <div class="cta-info-col">
+              <div class="hero-eyebrow-badge" style="background: rgba(37,99,235,0.2);">
+                <span class="pulse-dot"></span>
+                FREE STRATEGY SESSION
               </div>
-            </details>
 
-            <details class="srv-faq-item" name="srv-faq">
-              <summary class="srv-faq-summary">
-                <span>Can Brandingkit manage all our marketing activities?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                Yes. We operate as an integrated digital growth department for startups, SMEs, and scaling enterprises, managing campaign strategy, creative production, ad buying, CRM integration, follow-up automations, and reporting under one roof.
-              </div>
-            </details>
+              <h2>Ready to Grow Your Business Smarter?</h2>
+              
+              <p>
+                Tell us about your business goals. We will help you identify the right combination of digital marketing, technology, and automation services to scale your pipeline.
+              </p>
 
-            <details class="srv-faq-item" name="srv-faq">
-              <summary class="srv-faq-summary">
-                <span>How does your lead generation process work?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                We combine precision audience targeting on Meta and Google with conversion-optimized landing pages. When a user submits an inquiry, our automated system triggers an instant WhatsApp message, syncs the lead to your CRM, and alerts your sales rep within seconds.
-              </div>
-            </details>
+              <!-- Secondary WhatsApp Action -->
+              <a href="https://wa.me/917904053790?text=Hi%20Brandingkit%20team%2C%20I%20am%20interested%20in%20a%20free%20growth%20and%20automation%20consultation." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="cta-direct-wa-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2ZM12.04 3.67C14.24 3.67 16.31 4.53 17.87 6.09C19.42 7.64 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.04 20.16C10.64 20.16 9.27 19.8 8.07 19.12L7.76 18.94L4.65 19.76L5.48 16.73L5.28 16.41C4.54 15.22 4.14 13.58 4.14 11.91C4.14 7.37 7.84 3.67 12.04 3.67ZM16.63 14.46C16.38 14.33 15.15 13.73 14.92 13.64C14.69 13.56 14.53 13.52 14.36 13.77C14.19 14.02 13.71 14.59 13.56 14.76C13.41 14.93 13.27 14.95 13.02 14.82C12.77 14.7 11.96 14.43 11 13.57C10.25 12.9 9.75 12.07 9.6 11.82C9.45 11.57 9.58 11.44 9.71 11.31C9.82 11.2 9.96 11.02 10.08 10.87C10.21 10.72 10.25 10.62 10.33 10.45C10.42 10.28 10.37 10.14 10.31 10.01C10.24 9.88 9.75 8.68 9.54 8.18C9.34 7.69 9.13 7.76 8.98 7.75C8.83 7.74 8.67 7.74 8.5 7.74C8.33 7.74 8.06 7.8 7.83 8.05C7.6 8.3 6.95 8.91 6.95 10.15C6.95 11.39 7.85 12.58 7.98 12.75C8.1 12.92 9.75 15.46 12.27 16.55C12.87 16.81 13.34 16.97 13.7 17.08C14.31 17.28 14.86 17.25 15.29 17.18C15.78 17.11 16.79 16.57 17 15.98C17.21 15.39 17.21 14.89 17.15 14.78C17.08 14.67 16.88 14.59 16.63 14.46Z"/>
+                </svg>
+                <span>Chat on WhatsApp (+91 79040 53790)</span>
+              </a>
 
-            <details class="srv-faq-item" name="srv-faq">
-              <summary class="srv-faq-summary">
-                <span>What is the difference between SEO and Google Ads?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                Google Ads delivers immediate commercial intent traffic through paid search auctions, providing instantaneous visibility. SEO builds long-term organic authority and recurring traffic without per-click fees. We often combine both for maximum search dominance.
+              <div style="display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.85rem; color: var(--text-body-bright);">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #10b981;">✓</span>
+                  <span>100% Confidential Consultation</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #10b981;">✓</span>
+                  <span>Tailored Growth Architecture Blueprint</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: #10b981;">✓</span>
+                  <span>Guaranteed 15-Minute Response Time</span>
+                </div>
               </div>
-            </details>
+            </div>
 
-            <details class="srv-faq-item" name="srv-faq">
-              <summary class="srv-faq-summary">
-                <span>Can you integrate CRM with WhatsApp Business?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                Yes, we deploy official WhatsApp Business Platform integrations that automatically deliver brochure downloads, appointment confirmations, and AI chatbot responses while synchronizing conversation histories into your CRM in real time.
-              </div>
-            </details>
+            <!-- Right Compact Consultation Form -->
+            <div class="cta-form-col">
+              <form class="services-inquiry-form" id="servicesInquiryForm" novalidate>
+                
+                <div class="form-row-2col">
+                  <div class="form-field">
+                    <label for="serviceFullName">Full Name *</label>
+                    <input type="text" id="serviceFullName" name="fullName" placeholder="e.g. Karthik Raman" required autocomplete="name">
+                  </div>
+                  <div class="form-field">
+                    <label for="serviceBusinessName">Business / Company Name *</label>
+                    <input type="text" id="serviceBusinessName" name="businessName" placeholder="e.g. Apex Enterprises" required autocomplete="organization">
+                  </div>
+                </div>
+
+                <div class="form-row-2col">
+                  <div class="form-field">
+                    <label for="servicePhone">Phone Number (WhatsApp) *</label>
+                    <input type="tel" id="servicePhone" name="phone" placeholder="+91 79040 XXXXX" required autocomplete="tel">
+                  </div>
+                  <div class="form-field">
+                    <label for="serviceEmail">Email Address *</label>
+                    <input type="email" id="serviceEmail" name="email" placeholder="karthik@example.com" required autocomplete="email">
+                  </div>
+                </div>
+
+                <div class="form-row-2col">
+                  <div class="form-field">
+                    <label for="serviceInterested">Service Interested In *</label>
+                    <select id="serviceInterested" name="service" required>
+                      <option value="All-in-One Growth Stack" selected>All-in-One Growth Stack</option>
+                      <option value="Business Automation">Business Automation</option>
+                      <option value="Lead Generation">Lead Generation</option>
+                      <option value="Search Engine Optimization">Search Engine Optimization (SEO)</option>
+                      <option value="Website Development">Website Development</option>
+                      <option value="Meta Ads">Meta Ads (FB &amp; Instagram)</option>
+                      <option value="Google Ads">Google Ads (PPC)</option>
+                      <option value="Social Media Marketing">Social Media Marketing</option>
+                      <option value="Creative Design & Video Editing">Creative Design &amp; Video</option>
+                    </select>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="serviceBudget">Monthly Marketing Budget (Optional)</label>
+                    <select id="serviceBudget" name="budget">
+                      <option value="Not Specified">Select budget range</option>
+                      <option value="&lt; ₹25,000">&lt; ₹25,000 / month</option>
+                      <option value="₹25,000 - ₹50,000">₹25,000 - ₹50,000 / month</option>
+                      <option value="₹50,000 - ₹1,00,000">₹50,000 - ₹1,00,000 / month</option>
+                      <option value="₹1,00,000 - ₹3,00,000">₹1,00,000 - ₹3,00,000 / month</option>
+                      <option value="₹3,00,000+">₹3,00,000+ / month (Enterprise)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="serviceGoals">Tell Us About Your Goals</label>
+                  <textarea id="serviceGoals" name="goals" rows="3" placeholder="Share your current challenges, current monthly inquiries, or what you want to achieve with automation..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem; margin-top: 0.5rem;" id="submitServicesInquiryBtn">
+                  <span>Request My Consultation</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+
+                <p style="font-size: 0.72rem; color: var(--text-subtle); text-align: center; margin-top: 0.25rem;">
+                  🔒 We protect your privacy. Submitting directly connects you with our Chennai growth strategist.
+                </p>
+
+              </form>
+            </div>
 
           </div>
-
-          <!-- Column 2 (5 FAQs) -->
-          <div class="srv-faq-col">
-
-            <details class="srv-faq-item" name="srv-faq">
-              <summary class="srv-faq-summary">
-                <span>Do you develop websites for small businesses?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                Yes. We create modern, fast, mobile-responsive business websites and landing pages tailored specifically to help small businesses and local clinics build trust and convert visitors into inquiries.
-              </div>
-            </details>
-
-            <details class="srv-faq-item" name="srv-faq">
-              <summary class="srv-faq-summary">
-                <span>Can I choose individual services or a complete package?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                You can engage Brandingkit for individual standalone services (such as SEO or Meta Ads management) or implement our comprehensive All-in-One Digital Growth Stack for connected marketing and automation.
-              </div>
-            </details>
-
-            <details class="srv-faq-item" name="srv-faq">
-              <summary class="srv-faq-summary">
-                <span>How do you measure campaign performance?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                We track verified business metrics including Cost Per Qualified Lead (CPL), Return on Ad Spend (ROAS), Lead-to-Opportunity conversion rates, and revenue pipeline velocity, accessible through transparent live dashboards.
-              </div>
-            </details>
-
-            <details class="srv-faq-item" name="srv-faq">
-              <summary class="srv-faq-summary">
-                <span>Do you work with businesses outside Chennai?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                Yes. While our headquarters is in Padur, Chennai, we actively serve clients across India, the UAE, Singapore, the US, and the UK with cloud-connected collaboration and regular video reviews.
-              </div>
-            </details>
-
-            <details class="srv-faq-item" name="srv-faq">
-              <summary class="srv-faq-summary">
-                <span>How can I request a consultation?</span>
-                <svg class="srv-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </summary>
-              <div class="srv-faq-body">
-                You can submit the consultation inquiry form on this page, click our WhatsApp quick-connect button, or call our Chennai office at +91 79040 53790. Our growth specialists respond within 15 minutes during business hours.
-              </div>
-            </details>
-
-          </div>
-
         </div>
 
       </div>
     </section>
 
   </main>
-
 
   <!-- ==========================================================================
        SECTION 12: SITE FOOTER
