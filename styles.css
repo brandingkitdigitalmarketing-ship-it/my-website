@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: clamp(1rem, 1.6vw, 2rem);
   list-style: none;
 }
 
@@ -465,6 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: color 0.2s ease;
   position: relative;
   padding: 0.35rem 0;
+  white-space: nowrap;
 }
 
 .nav-item a:hover {
@@ -3118,6 +3119,13 @@ h1, h2, h3, h4, h5, h6 {
    RESPONSIVE DESIGN (Tablets, Mobiles, Desktops)
    ========================================================================== */
 @media (max-width: 1024px) {
+  .nav-links {
+    gap: 0.95rem;
+  }
+  .nav-item a {
+    font-size: 0.86rem;
+  }
+
   .dashboard-main-split {
     grid-template-columns: 1fr;
   }
